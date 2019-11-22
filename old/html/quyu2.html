@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="http://www.tlink.io/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="http://www.tlink.io/js/chart/highcharts.js"></script>
+</head>
+
+<body>
+    <div id="container" style="width:100%;height:100%;"></div>
+</body>
+<script>
+    $(function () {
+        cover();
+        $(window).resize(function () { //获得浏览器窗口变化 
+            cover();
+        });
+        Highcharts.setOptions({
+            global: {
+                useUTC: false
+            }
+        });
+        var chart;
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container',
+                type: 'spline',
+                backgroundColor: 'rgba(0,0,0,0)'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: ''
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                type: 'datetime',
+                tickPixelInterval: 150
+            },
+            yAxis: {
+                title: {
+                    text: '实时曲线'
+                },
+                min: 0,
+                minorGridLineWidth: 0,
+                gridLineWidth: 0,
+                alternateGridColor: null,
+                plotBands: [{ // Light air
+                    from: 0.3,
+                    to: 1.5,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'Light air',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Light breeze
+                    from: 1.5,
+                    to: 3.3,
+                    color: 'rgba(0, 0, 0, 0)',
+                    label: {
+                        text: 'Light breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Gentle breeze
+                    from: 3.3,
+                    to: 5.5,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'Gentle breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Moderate breeze
+                    from: 5.5,
+                    to: 8,
+                    color: 'rgba(0, 0, 0, 0)',
+                    label: {
+                        text: 'Moderate breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Fresh breeze
+                    from: 8,
+                    to: 11,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'Fresh breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Strong breeze
+                    from: 11,
+                    to: 14,
+                    color: 'rgba(0, 0, 0, 0)',
+                    label: {
+                        text: 'Strong breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // High wind
+                    from: 14,
+                    to: 15,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'High wind',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }]
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + '</b><br/>' + Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' + Highcharts.numberFormat(this.y, 2);
+                }
+            },
+            plotOptions: {
+                spline: {
+                    lineWidth: 4,
+                    states: {
+                        hover: {
+                            lineWidth: 5
+                        }
+                    },
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+            series: [{
+                name: 's1',
+                data: (function () { // generate an array of random data                             
+                    var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+                    for (i = -19; i <= 0; i++) {
+                        data.push({
+                            x: time + i * 1000,
+                            y: null
+                        });
+                    }
+                    return data;
+                })()
+
+            }, {
+                name: 's2',
+                data: (function () { // generate an array of random data                             
+                    var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+                    for (i = -19; i <= 0; i++) {
+                        data.push({
+                            x: time + i * 1000,
+                            y: null
+                        });
+                    }
+                    return data;
+                })()
+            }]
+            ,
+            navigation: {
+                menuItemStyle: {
+                    fontSize: '10px'
+                }
+            }
+        });
+        var series = chart.series[0];
+        var series1 = chart.series[1];
+        setInterval(function () {
+            var x = (new Date()).getTime(),
+                // current time         
+                y = Math.random();
+            y1 = Math.random();
+            series.addPoint([x, y + 1], true, true);
+            series1.addPoint([x, y1 + 1], true, true);
+        }, 5000);
+
+    });
+    function cover() {
+        var win_height = $(window).height();
+        $("#container").css({ "height": win_height + "px" });
+
+    };			
+</script>
+
+</html>

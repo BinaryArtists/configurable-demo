@@ -1,0 +1,2206 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="renderer" content="webkit">
+		<title>组态应用</title>
+		<link rel="icon" href="./images/favicon.ico">
+		<link rel="stylesheet" href="./css/sui.css">
+		<link rel="stylesheet" href="./css/jquery-ui.css">
+		<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="./css/jPicker-1.1.6.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<script src="./js/zutai/jquery.min.js"></script>
+		<script src="./js/zutai/jquery-ui.min.js"></script>
+		<style>
+			.avast_link_none
+			{
+				z-index:5;position:absolute;top:0;left:0;width:100%;height:100%;
+			}
+		</style>
+	<body>
+	    <input id="basePath" value=""  type="hidden" />
+	    <input id="userId" value="781"  type="hidden" />
+	    <input id="isTemplate" value="0" type="hidden"/>
+		<div class="container-index">
+			<!-- 头部工具区 -->
+			<div class="avast_top">
+				<div class="avast_top_icon">
+					<a href="/configurationList.htm" class="container-icon avast_top_icon_a" title="返回">
+					</a>
+				</div>
+				<div class="avast_top_icon_1">
+					<a href="javascript:saveZutai();" class="container-icon avast_top_icon_a_1" title="保存" data-toggle="tooltip" data-placement="bottom">
+					</a>
+					<!--
+					<a href="#" class="container-icon avast_top_icon_a_2" title="">
+					</a>
+					<a href="#" class="container-icon avast_top_icon_a_3" title="">
+					</a>
+					
+					<a href="#" class="container-icon avast_top_icon_a_5" title="">
+					</a>-->
+					<a href="#" class="container-icon avast_top_icon_a_6" title="对齐方式"  data-toggle="tooltip" data-placement="bottom">
+					</a>
+					<!--
+					<a href="#" class="container-icon avast_top_icon_a_7" title="">
+					</a>-->
+					<a href="#" class="container-icon avast_top_icon_a_8" title="成组"  data-toggle="tooltip" data-placement="bottom">
+					</a>
+					<a href="#" class="container-icon avast_top_icon_a_9" title="编辑成组"  data-toggle="tooltip" data-placement="bottom">
+					</a>
+					<a href="#" class="container-icon avast_top_icon_a_11" title="网格" data-toggle="tooltip" data-placement="bottom">
+					</a>
+					<a href="#" class="container-icon avast_top_icon_a_4" title="手机版"  data-toggle="tooltip" data-placement="bottom">
+					</a>
+					<!--
+					<a href="#" class="container-icon avast_top_icon_a_12" title="">
+					</a>-->
+					<div style="float:left;width:100px;">
+					</div>
+				</div>
+				<div class="avast_top_icon_2">
+					<div class="avast_top_icon_2-1">
+						<a href="./html/preview.html" target="_blank" class="container-icon avast_top_icon_a_14" title="预览">
+							预览
+						</a>
+					</div>
+					<div class="avast_top_icon_2-1">
+						<a class="avast_top_icon_a_15" title="发布组态">
+							发布
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- 头部工具区end -->
+			
+			<!-- 左侧工具区 -->
+			<div class="avast_left">
+				<div role="tabpanel">
+					<div class="avast_tab">
+						<ul class="avast_tab_ul" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="container-icon avast_tab_ul_icon1">
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"  class="container-icon avast_tab_ul_icon2">
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" class="container-icon avast_tab_ul_icon3">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="home">
+							<div class="avast_left_txt">
+								<h2 class="avast_left_txt_h2">
+									基本
+								</h2>
+								<div class="avast_left_txt_div">
+									<ul>
+										<span class="avast_left_txt_div_span avast_index_txt">
+											<div class="avast_left_txt_div_img">
+												<img src="./images/zutai/text1.png">
+												<span class="avast_left_txt_div_img_span">
+													文本
+												</span>
+												<div class="avast-position">
+												</div>
+											</div>
+											<div class="avast_left_text avast_width">文本输入</div>
+										</span>
+										<span class="avast_left_txt_div_span avast_link">
+											<div class="avast_left_txt_div_img">
+												<img src="./images/zutai/link.png">
+												<span class="avast_left_txt_div_img_span">
+													链接
+												</span>
+												<div class="avast-position">
+												</div>
+											</div><a href="" target=" _blank" style="color:#000;">
+											<div class="avast_left_text avast_width">链接</div></a>
+											<div class="avast_link_none">
+											</div>
+										</span>
+										<span class="avast_left_txt_div_span avast_link">
+											<div class="avast_left_txt_div_img">
+												<img src="./images/zutai/buttom.png">
+												<span class="avast_left_txt_div_img_span">
+													按钮
+												</span>
+												<div class="avast-position">
+												</div>
+											</div><a href="" target=" _blank" style="color:#fff;"><div class="avast_left_text avast_link_bottom">按钮</div></a>
+											<div class="avast_link_none">
+											</div>
+										</span>
+										<span class="avast_left_shangchuan">
+											<div class="avast_left_txt_div_img">
+												<img src="./images/zutai/shangchuan.png">
+												<span class="avast_left_txt_div_img_span">
+													图片
+												</span>
+												<div class="avast-position">
+												</div>
+											</div>
+											<div class="avast_left_shangchuan_img">
+												<img src="./images/zutai/shangchuan.png" class="upd_img">
+												<div class="avast_logding">
+													<div class="avast_logding_logo">
+													
+													</div>
+												</div>
+											</div>
+										</span>
+										<span class="avast_left_time">
+											<div class="avast_left_txt_div_img">
+												<img src="./images/zutai/time.png">
+												<span class="avast_left_txt_div_img_span">
+													时间
+												</span>
+												<div class="avast-position">
+												</div>
+											</div>
+											<div class="avast_left_text add-time">文本输入</div>
+										</span>
+										
+									</ul>
+								</div>
+								<h2 class="avast_left_txt_h2">
+									形状
+								</h2>
+								<div class="avast_left_shape">
+									<ul>
+										<div class="avast_left_tuxing">
+											<div class="avast_left_zheng">
+											</div>
+										</div>
+										<div class="avast_left_tuxing">
+											<div class="avast_left_yuan">
+											</div>
+										</div>
+										<div class="avast_left_svg">
+											<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+											    <line class="myCircleB" x1="50%" y1="1" x2="50%" y2="100%" stroke="#000" style="stroke-width:1" />
+											</svg>
+										</div>
+										<div class="avast_left_svg">
+											<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+											    <line class="myCircleB" x1="1" y1="50%" x2="100%" y2="50%" stroke="#000" style="stroke-width:1" />
+											</svg>
+										</div>
+										<div class="avast_left_svg">
+											<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<g class="myCircleB" stroke="#000">
+													<line x1="50%" y1="1" x2="100%" y2="100%" style="stroke-width:1"></line>
+													<line x1="50%" y1="1" x2="1" y2="100%" style="stroke-width:1"></line>
+													<line x1="1" y1="100%" x2="100%" y2="100%" style="	stroke-width:1"></line>
+												</g>
+											</svg>
+										</div>
+										<div class="avast_left_svg">
+											<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<g class="myCircleB" stroke="#000">
+													<line x1="50%" y1="1" x2="70%" y2="20px" style="stroke-width:1"></line>
+													<line x1="50%" y1="1" x2="30%" y2="20px" style="stroke-width:1"></line>
+													<line x1="50%" y1="1" x2="50%" y2="100%" style="stroke-width:1"></line>
+												</g>
+											</svg>
+										</div>
+									</ul>
+								</div>
+							</div>	
+						</div>
+						<div role="tabpanel" class="tab-pane" id="profile">
+							<div id="tabs">
+								<ul class="index_tabs">
+									<li class="index_tabs_li">
+										<a href="#tabs-7">
+											数值/开关
+										</a>
+									</li>
+									
+									<li class="index_tabs_li">
+										<a href="#tabs-2">
+											曲线图
+										</a>
+									</li>
+									
+									<li class="index_tabs_li">
+										<a href="#tabs-4">
+											区域图
+										</a>
+									</li>
+									
+									<li class="index_tabs_li">
+										<a href="#tabs-6">
+											仪表图
+										</a>
+									</li>
+									
+									<li class="index_tabs_li">
+										<a href="#tabs-8">
+											数据下发
+										</a>
+									</li>
+									
+									<li class="index_tabs_li">
+										<a href="#tabs-10">
+											定位
+										</a>
+									</li>
+									
+									<li class="index_tabs_li">
+										<a href="#tabs-9">
+											历史
+										</a>
+									</li>
+									
+								</ul>
+								<div class="index_tabs_echarts">
+									<div id="tabs-7" class="tabs_echarts">
+										<div class="tabs_echarts_SZ">
+											<div class="avast_chuanganqi_ico" title="1" show="shuzhi1">
+												<div class="avast_sensor_SZ">
+													<img src="./images/zutai/shuzhi.png">
+													<div class="avast_sensorSZ">
+														<span>27</span>
+														<br />
+														<span class="_time" style="display: none;">1900-00-00 00:00:00</span>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+										<div class="tabs_echarts_KG tabs_echarts_A">
+											<div class="avast_chuanganqi_ico" title="1" flag="kaiguan" show="kaiguan1">
+												<div class="avast_sensor_KG">
+													<img src="./images/zutai/kaiguan.png" class="avast_sensor_png">
+													<div class="avast_sensorKG">
+														<div class="avast_on">
+															<img src="./images/zutai/on.png" class="on">
+														</div>
+														<div class="avast_off" style="display:none;"><img src="./images/zutai/off.png" class="off"></div>
+													</div>
+													<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+													<div class="index_choice_sc">
+											
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tabs_echarts_KG tabs_echarts_C">
+											<div class="avast_chuanganqi_ico" title="1" flag="kaiguan"  show="kaiguan3">
+												<div class="avast_sensor_KG">
+													<img src="./images/switcher3.png" class="avast_sensor_png">
+													<div class="avast_sensorKG">
+														<div class="avast_on">
+															<img src="./images/sw3_on.png" class="on">
+														</div>
+														<div class="avast_off" style="display:none;"><img src="./images/zutai/off.png" class="off"></div>
+													</div>
+													<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+													<div class="index_choice_sc">
+											
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tabs_echarts_KG tabs_echarts_D">
+											<div class="avast_chuanganqi_ico" title="1" flag="kaiguan" show="kaiguan4">
+												<div class="avast_sensor_KG">
+													<img src="./images/switcher4.png" class="avast_sensor_png">
+													<div class="avast_sensorKG">
+														<div class="avast_on">
+															<img src="./images/sw4_on.png" class="on">
+														</div>
+														<div class="avast_off" style="display:none;"><img src="./images/zutai/off.png" class="off"></div>
+													</div>
+													<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+													<div class="index_choice_sc">
+											
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tabs_echarts_KG tabs_echarts_B tabs_echarts_ZDY">
+											<div class="avast_chuanganqi_ico" title="1" flag="kaiguan" show="kaiguan5">
+												<div class="avast_sensor_KG">
+													<img src="./images/zutai/zdingyi.png" class="avast_sensor_png">
+													<div class="avast_sensorKG" id="_switcher">
+														<div class="avast_on">
+															<img src="./images/sw2_on.png" class="on">
+														</div>
+														<div class="avast_off" style="display:none;"><img src="./images/sw2_off.png" class="off"></div>
+													</div>
+													<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+													<div class="index_choice_sc">
+											
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+	
+									<div id="tabs-2" class="tabs_echarts">
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" show="quxian1">
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/quxiantu/12.png" id="quxian1">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" title="1" show="quyu1"> 
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/quyutu/13.png" id="quyu1">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+										
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" show="quxian7"> 
+												<div class="avast_sensor">
+													<img src="./images/zutai/ssqx.png" id="quxian7">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+										
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" show="quxian6"> 
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/quxiantu/20.png" id="quxian6">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+										
+										
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" show="quyu2">
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/quyutu/14.png" id="quyu2">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+										
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" title="1" show="quxian3">
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/quxiantu/5.png" id="quxian3">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="tabs-4" class="tabs_echarts">
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" show="quyu3">
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/quyutu/18.png" id="quyu3">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" show="quyu4">
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/quyutu/19.png" id="quyu4">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									
+								    <div id="tabs-8" class="tabs_echarts">
+										<div class="tabs_equipment">
+											<div class="avast_chuanganqi_ico" flag="tongxin" show="tongxin">
+												<div class="tabs_equipment_off">
+													<img src="./images/zutai/sbtx.png">
+												</div>
+												<div class="tabs_equipment_on">
+													<img src="./images/zutai/sbtx_on.png">
+												</div>
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div id="tabs-9" class="tabs_echarts">
+										<div class="tabs_equipment history">
+											<div class="avast_chuanganqi_ico" flag="history" show="history">
+												<div class="tabs_equipment_off">
+													<img src="./images/zutai/history.png">
+												</div>
+												<div class="tabs_equipment_on">
+													<img src="./images/zutai/history-on.png">
+												</div>
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div id="tabs-10" class="tabs_echarts">
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" title="1" flag="map" show="map">
+												<div class="avast_sensor">
+													<img src="./images/zutai/gps.png" id="map">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div id="tabs-6" class="tabs_echarts">
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" title="1" flag="yibiao" show="yibiao1">
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/yibiao/7.png" id="yibiao1">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>	
+										<div class="tabs_echarts_img">
+											<div class="avast_chuanganqi_ico" title="1" flag="yibiao" show="yibiao4">
+												<div class="avast_sensor">
+													<img src="./images/zutai/tubiao/yibiao/11.png" id="yibiao4">
+													<div class="iframe">
+														<div class="avast_iframe_z">
+														</div>
+													</div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="messages">
+							<div class="avast_left_ico">
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 avast-left-h21 ui-icon-triangle-1-e"onclick="getHtml('dongku');">
+										<a href="#">动态图标</a>
+									</h2>
+									<div class="avast-left-div PID-dongku">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2  ui-icon-triangle-1-e"onclick="getHtml('jianzhu');">
+										<a href="#">建筑</a>
+									</h2>
+									<div class="avast-left-div PID-jianzhu">
+										<ul></ul>
+									</div>
+								</div>
+								
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('gongchangsheshi');">
+										<a href="#">工厂设施</a>
+									</h2>
+									<div class="avast-left-div PID-gongchangsheshi">
+										<ul></ul>
+									</div>
+								</div>
+								
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('guandao');">
+										<a href="#">管道</a>
+									</h2>
+									<div class="avast-left-div PID-guandao">
+										<ul></ul>
+									</div>
+								</div>
+								
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('dianyuan');">
+										<a href="#">电源</a>
+									</h2>
+									<div class="avast-left-div PID-dianyuan">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('dianxian');">
+										<a href="#">电线电缆</a>
+									</h2>
+									<div class="avast-left-div PID-dianxian">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('yibiao');">
+										<a href="#">仪表</a>
+									</h2>
+									<div class="avast-left-div PID-yibiao">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('zhichenglengque');">
+										<a href="#">制程冷却</a>
+									</h2>
+									<div class="avast-left-div PID-zhichenglengque">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('zhichengjiare');">
+										<a href="#">制程加热</a>
+									</h2>
+									<div class="avast-left-div PID-zhichengjiare">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('shuicao');">
+										<a href="#">水槽</a>
+									</h2>
+									<div class="avast-left-div PID-shuicao">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('jiaobanqi');">
+										<a href="#">搅拌器</a>
+									</h2>
+									<div class="avast-left-div PID-jiaobanqi">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('feishuichuli');">
+										<a href="#">废水处理</a>
+									</h2>
+									<div class="avast-left-div PID-feishuichuli">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('fadongji');">
+										<a href="#">发动机</a>
+									</h2>
+									<div class="avast-left-div PID-fadongji">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('beng');">
+										<a href="#">泵</a>
+									</h2>
+									<div class="avast-left-div PID-beng">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('wuliaoyunshu');">
+										<a href="#">物料运输</a>
+									</h2>
+									<div class="avast-left-div PID-wuliaoyunshu">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('deng');">
+										<a href="#">灯</a>
+									</h2>
+									<div class="avast-left-div PID-deng">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('anniu');">
+										<a href="#">按钮</a>
+									</h2>
+									<div class="avast-left-div PID-anniu">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('anquan');">
+										<a href="#">安全</a>
+									</h2>
+									<div class="avast-left-div PID-anquan">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('famen');">
+										<a href="#">阀门</a>
+									</h2>
+									<div class="avast-left-div PID-famen">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('famenfuhao');">
+										<a href="#">阀门符号</a>
+									</h2>
+									<div class="avast-left-div PID-famenfuhao">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('gongye');">
+										<a href="#">工业</a>
+									</h2>
+									<div class="avast-left-div PID-gongye">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('gufengji');">
+										<a href="#">鼓风机</a>
+									</h2>
+									<div class="avast-left-div PID-gufengji">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('guolu');">
+										<a href="#">锅炉</a>
+									</h2>
+									<div class="avast-left-div PID-guolu">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('huaxue');">
+										<a href="#">化学</a>
+									</h2>
+									<div class="avast-left-div PID-huaxue">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('jiqi');">
+										<a href="#">机器</a>
+									</h2>
+									<div class="avast-left-div PID-jiqi">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('jiareqi');">
+										<a href="#">加热器</a>
+									</h2>
+									<div class="avast-left-div PID-jiareqi">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('liuliangji');">
+										<a href="#">流量计</a>
+									</h2>
+									<div class="avast-left-div PID-liuliangji">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('rongqi');">
+										<a href="#">容器</a>
+									</h2>
+									<div class="avast-left-div PID-rongqi">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('shipingjiagong');">
+										<a href="#">食品加工</a>
+									</h2>
+									<div class="avast-left-div PID-shipingjiagong">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('havc');">
+										<a href="#">HAVC</a>
+									</h2>
+									<div class="avast-left-div PID-havc">
+										<ul></ul>
+									</div>
+								</div>
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('wuliu');">
+										<a href="#">物流</a>
+									</h2>
+									<div class="avast-left-div PID-wuliu">
+										<ul></ul>
+									</div>
+								</div>
+								
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('tianqi');">
+										<a href="#">天气</a>
+									</h2>
+									<div class="avast-left-div PID-tianqi">
+										<ul></ul>
+									</div>
+								</div>
+								
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('zhiwu');">
+										<a href="#">植物</a>
+									</h2>
+									<div class="avast-left-div PID-zhiwu">
+										<ul></ul>
+									</div>
+								</div>
+								
+								<div class="avast_left_ico_zutai">
+									<h2 class="avast-left-h2 ui-icon-triangle-1-e" onclick="getHtml('biaozhu');">
+										<a href="#">标注</a>
+									</h2>
+									<div class="avast-left-div PID-biaozhu">
+										<ul></ul>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="avast_left_a">
+			</a>
+			<a href="#" class="avast_left_b">
+			</a>
+			<!-- 左侧工具区end -->
+			
+			<!-- 右侧编辑区 -->
+			<div class="avast_right" id="">
+				<div class="avast_tab">
+					<ul class="avast_tab_right_ul">
+						<li class="active">
+							<a href="#" class="avast_tab_ul_icon4">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="tab-right">
+						<div class="fabu_body_con">
+						   <form action="/saveConfiguration.htm" id="zutaiForm" method="post">
+						    <input type="hidden" name="html" id="_html">
+							<input type="hidden" name="id" value="19801">
+							<input type="hidden" name="isLogin" id="isLogin" value="0"/>
+							<input type="hidden" name="link" value="B734EED08EA666E16567" id="_link" />
+							<input type="hidden" name="appico" value="" id="appico" />
+							<input type="hidden" name="status" value="0" id="status">
+							<input type="hidden" name="flag" id="flag">
+							<div class="fabu_body_tubiao">
+								<div class="fabu-contentarea">
+									<a href="javascript:void(0)" class="upload-fabu">
+										<div class="fabu-contentarea-img">
+											<!-- 上传图片路径输出到这里 -->
+											<img src="" onerror="this.src='./images/zutai/yingyong_logo.png'" id="upd_ico" />
+										</div>
+										<label for="upload-file"></label>
+									</a>
+									<input type="file" name="file" id="upload-appico" onchange="ajaxFileUpload('upload-appico')">
+								</div>
+								<div class="fabu-contentarea-text">
+									支持自定义/大小144*144,200K以内支持jpg,png,bmp,gif
+								</div>
+							</div>
+							<div class="fabu-contentarea-yingyong">
+								<div class="fabu_body_input">
+									应用名称
+									<input type="text" value="测试" name="appname" id="appname" class="fabu_input" placeholder="请输入组态名称">
+								</div>
+								<div class="fabu_body_input">
+									<div class="fubu_checkbox">
+										<div class="fubu_checkbox_div fubu_checkbox_div_on">
+											<span class="fubu_checkbox_span fubu_checkbox_span_on"></span>
+											公开 
+										</div>
+										<div class="fubu_checkbox_div fubu_checkbox_div_off">
+											<span class="fubu_checkbox_span"></span>
+											加密 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="fabu_body_txt fabu_body_txt-padding">
+								<div class="fabu_body_input">
+									用户设置
+									<input type="text" name="username" id="username" value="" class="fabu_input  fabu_input_on" placeholder="请输入用户名"  disabled=disabled>
+								</div>
+								<div class="fabu_body_input fabu_body_input_padding">
+									<input type="password" name="password" id="password" value="" class="fabu_input fabu_input_on" placeholder="请输入密码" disabled=disabled>
+								</div>
+							</div>
+						  </form>
+						</div>
+						<div class="index_background">
+							<div class="index_background_title">
+								调整画布
+								<span class="index_background_span">
+								</span>
+							</div>
+							
+							<div class="index_background_con">
+								<div class="index_background_con_off">
+								</div>
+								<div class="index_background_color">
+									画布背景
+									<div class="index_background_color_txt">
+										<input class="dropdown_index_background" type="text" value="ffffff" />
+									</div>
+								</div>
+								<div class="index_background_color">
+									背景透明
+									<div class="index_background_touming">
+										<div class="index-range-touming">
+										</div>
+									</div>
+									<div class="index_touming_input">
+										<input type="text" value="" id="index_touming_touming" class="index_touming_touming">
+									</div>
+								</div>
+								<div class="index_background_colorB">
+									边框
+									<div class="avast_border_right">
+										<div class="avast_border_right_01">
+											大小
+											<div class="avast_border_daxiao">
+												<button class="index_border_jia" title="增加">
+												</button>
+												<div class="avast_border_txt">
+													<input type="text" value="" id="index_border">
+												</div>
+												<button class="index_border_jian" title="减少">
+												</button>
+											</div>
+										</div>
+										<div class="avast_border_right_01">
+											样式
+											<select class="index_border_select">
+												<option value="volvo">默认</option>
+												<option value="dashed">虚线轮廓</option>
+												<option value="solid">实线轮廓</option>
+												<option value="dotted">点状轮廓</option>
+												<option value="double">双线轮廓</option>
+												<option value="groove">3D凹槽轮廓</option>
+												<option value="ridge">3D凸槽轮廓</option>
+												<option value="inset">3D凹边轮廓</option>
+												<option value="outset">3D凸边轮廓</option>
+											</select>
+										</div>
+										<div class="avast_border_right_01">颜色
+											<div class="avast_border_right_txt">
+												<input class="index_dropdown_border" type="text" value="ffffff" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="index_background_color1">
+									背景大小
+									<div class="index_background_kuangao">
+										<div class="index_background_kuangaoX">
+											宽
+											<input type="text" id="index_background_input_kuangaoX" class="index_background_input_kuangaoX" value="0">
+										</div>
+										<div class="index_background_kuangaoY">
+											高
+											<input type="text" id="index_background_input_kuangaoY" class="index_background_input_kuangaoY" value="0">
+										</div>
+									</div>
+								</div>
+								<div class="index_background_color">
+									上传背景图
+									<div class="index_img_shangchuan">  
+										<input type="file" name="file" onchange="ajaxFileUpload('upload-bg')"  id="upload-bg" class="index_img_shangchuan_input"/>  
+									</div>
+									<div class="index_img_shangchu">  
+										<a href="javascript:delbg();">
+											删除
+										</a>
+									</div>  
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="avast_right_a">
+			</a>
+			<a href="#" class="avast_right_b">
+			</a>
+			<!-- 右侧编辑区end -->
+			
+			<!-- 主体编辑保存区域 -->
+			<div class="body">
+			    
+			         
+			    
+			    
+			       <div class="index" style="margin-top: 45px; width: 849px; height: 2277px;">
+					<!-- class="index" 为画布大小控制辅助编辑完成后应该删除 -->
+						<div class="avast_index  avast_index_html" style="left: -85.5px;">
+							<img src="" style="width:100%;height:100%;display:none;" id="img_bg">
+							<div id="avast_index" style="display: none;">
+								<!-- 辅助网格线保存后要删除 -->
+							</div>
+							<div class="avast_index_li ui-droppable">
+	                              
+							<span class="avast_left_txt_div_span avast_index_txt ui-draggable ui-draggable-handle index_html edit_html" style="position: absolute; width: 120px; right: auto; height: 35px; bottom: auto; left: 522.5px; top: 0px; margin: 0px; transform: rotate(0deg); z-index: 1; border-style: solid; border-width: 0px; border-color: rgba(0, 0, 0, 0); opacity: 1; font-weight: 400; line-height: 35px;">
+											
+											<div class="avast_left_text avast_width" style="display: block;">测试</div>
+										</span><div class="ui-draggable ui-draggable-handle index_html edit_html tabs_echartss_avastZ" style="position: absolute; width: 100px; right: auto; height: 100px; bottom: auto; left: 535.5px; top: 43px; margin: 0px; transform: rotate(0deg); z-index: 1; border: 1px solid rgb(221, 221, 221); opacity: 1; font-weight: 400; background-color: rgb(255, 255, 255); border-radius: 5px; text-align: center; line-height: 30px;">
+											<div class="avast_chuanganqi_ico" title="1" show="shuzhi1">
+												<div class="avast_sensor_SZ">
+													
+													<div class="avast_sensorSZ"><span class="s_undefined">00</span><span class="unit_undefined">&nbsp;</span><br><span class="st_undefined"></span></div>
+												</div>
+												<!-- 设备传感器隐藏域用于 图表切换更新绑定传感器面板 -->
+												<div class="index_choice_sc">
+										
+												<li class="index_choice_shebei" title="941">test1</li><li class="st" title="1"></li></div>
+											</div>
+										</div></div>
+						</div>
+					</div>
+			    
+			
+
+			    <script>
+				
+					$(".avast_index_li").children("*").each(function()
+					{
+						if($(this).hasClass("edit_html"))
+						{
+							
+						}else
+						{
+							$(this).addClass("edit_html");
+						
+						}
+						$(this).draggable(
+						{
+							opacity: 1,
+							containment:'.avast_index_li',
+							scroll: false,
+						});
+					});
+			       $("#avast_index").show();
+			       var main = $(".avast_index_li").find(".ui-draggable-handle");
+			       if(main.length > 0){
+			          for(var i = 0;i < main.length;i++){
+			               var obj = main[i];
+			               var show = $(obj).find(".avast_chuanganqi_ico").attr("show");
+			               if("shuzhi1" == show){  
+			                   $(obj).find(".avast_sensorSZ").html('<span>27</span><br /><span class="_time" style="display: none;">1900-00-00 00:00:00</span>')
+			               }else if("kaiguan1" == show){
+			                  $(obj).find(".avast_on").html('<img src="./images/zutai/on.png" class="mCS_img_loaded">');
+			               }else if("kaiguan2" == show){
+			                  $(obj).find(".avast_on").html('<img src="./images/sw2_on.png" class="mCS_img_loaded">');
+			               }else if("kaiguan3" == show){
+			                  $(obj).find(".avast_on").html('<img src="./images/sw3_on.png" class="mCS_img_loaded">');
+			               }else if("kaiguan4" == show){
+			                  $(obj).find(".avast_on").html('<img src="./images/sw4_on.png" class="mCS_img_loaded">');
+			               }else if("kaiguan5" == show){
+			                  $(obj).find(".avast_on").removeAttr("onclick");
+			                  $(obj).find(".avast_off").removeAttr("onclick");
+			                  $(obj).find(".avast_sensorKG").attr("class","avast_sensorKG");
+			               }else if("quxian1" == show){
+			                  $(obj).find(".avast_iframe_z").show();
+			                  $(obj).find(".avast_iframe").attr("src","./html/quxian1.html");
+			               }else if("quxian3" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quxian3.html");
+			               }else if("quxian4" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quxian4.html");
+			               }else if("quxian6" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quxian6.html");
+			               }else if("quxian7" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quxian7.html");
+			               }else if("quyu1" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quyu1.html");
+			               }else if("quyu2" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quyu2.html");
+			               }else if("quyu3" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quyu3.html");
+			               }else if("quyu4" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/quyu4.html");
+			               }else if("yibiao1" == show){
+			                  $(obj).find(".avast_iframe_z").show();
+			                  $(obj).find(".avast_iframe").attr("src","./html/yibiao1.html");
+			               }else if("yibiao4" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/yibiao4.html");
+			               }else if("map" == show){
+			                   $(obj).find(".avast_iframe_z").show();
+			                   $(obj).find(".avast_iframe").attr("src","./html/map.html");
+			               }
+			               bindMover(obj);
+			          	}
+			          	if($('#isTemplate').val() != null && $('#isTemplate').val() == '1'){
+			          		//模板复制来的，清空之前用户的传感器，从新绑定
+			          		$('.index_choice_sc').html('');
+			          	}
+			       }
+			       function bindMover(obj){
+			          $(obj).on("mousedown",function(){
+	                    bindClick(this);
+	                    shows(this);
+	                    $(this).draggable(
+					    {
+							opacity: 1,
+							containment:'.avast_index_li',
+							scroll: false,
+						});
+						//放置后允许拖拽
+						$(this).resizable(
+						{
+							addClass:false,
+							containment:'.avast_index_li',
+							handles:"n,e,s,w,se,sw,ne,nw" ,
+						});			
+	                   });
+			       }
+			    </script>     
+			    
+			    
+			</div>
+			<!-- 主体编辑区域end -->
+
+			<!-- 绑定传感器区域 -->
+			<div class="avast_chuanganqi">
+				<div class="avast_chuanganqi_title ">
+					绑定传感器
+				</div>
+				<div class="avast_chuanganqi_seleat">
+					<div class="avast_chuanganqi_txt" id="_deviceDiv">
+						绑定设备
+						<div class="avast_chuanganqi_select click_shebei">
+							请选择设备
+							<div class="click_xuanze_shebei" id="_device">
+								
+									<li class="click_li_shebei" title="941" dname="test1">
+										<span class="click_span_shebei">
+										</span>
+										test1
+									</li>
+							    
+									<li class="click_li_shebei" title="942" dname="test2">
+										<span class="click_span_shebei">
+										</span>
+										test2
+									</li>
+							    
+							</div>
+						</div>
+					</div>
+					<div class="avast_chuanganqi_txt">
+						绑定传感器
+						<div class="avast_chuanganqi_select click_chuanganqi">
+							选择传感器
+							<div class="click_xuanze_chuanganqi" id="_sensor">
+							   
+							</div>
+						</div>
+					</div>
+					<div style="display: none;" id="_yibiao">
+						<div class="avast_chuanganqi_txt">
+							表盘最小值
+							<input type="text" value="" id="_min" class="avast_chuanganqi_input" oninput="setMin(this.value);">
+						</div>
+						<div class="avast_chuanganqi_txt">
+							表盘最大值
+							<input type="text" value="" id="_max" class="avast_chuanganqi_input" oninput="setMax(this.value);">
+						</div>
+					</div>
+					<div class="choice_shebei">
+						已选设备
+						<div class="add_choice_shebei">
+						
+						</div>
+					</div>
+					<div class="choice_chuanganqi">
+						已选传感器
+						<div class="add_choice_chuanganqi">
+						
+						</div>
+					</div>
+					<div class="tubiao_transparent_1">
+						是否显示时间
+						<div class="tubiao_transparent_2">
+						</div>
+					</div>
+					<!--
+					<div class="tubiao_transparent_1" style="display:none;">
+						图表是否透明
+						<div class="tubiao_transparent_2">
+						</div>
+					</div>-->
+				</div>
+				<div style="height:20px">
+				</div>
+			</div>
+			<!-- 绑定传感器区域 -->
+			<!-- 文本编辑器 --> 
+			<div class="avast_text">
+				<div class="avast_text_title">
+					<span class="avast_text_span">文本</span>
+				</div>
+				<div class="avast_text_txt">
+					<div class="avast_text_link">
+						<div class="avast_text_link_1">
+							连接地址
+							<input class="avast_text_link_input" id="avast_text_link_input" placeholder="亲，在这里输入连接哦" type="text" value="" />
+						</div>
+						<div class="avast_text_link_1">
+							连接预览
+							<div class="avast_text_link_2">
+							</div>
+						</div>
+					</div>
+					<div class="avast_text_textarea">
+						<textarea id="textarea" placeholder="亲，在这里输入文字哦"></textarea>
+					</div>
+					<div class="avast_text_control">
+						<div class="avast_textcontrol_con avast_textcontrol_con_on">
+							<div class="avast_textcontrol_on font_size" title="字体大小">
+								
+							</div>
+							<ul class="ul_textcontrol_on ul_font_size">
+								<li class="li_font_size">
+									10
+								</li>
+								<li class="li_font_size">
+									11
+								</li>
+								<li class="li_font_size">
+									12
+								</li>
+								<li class="li_font_size">
+									13
+								</li>
+								<li class="li_font_size">
+									14
+								</li>
+								<li class="li_font_size">
+									15
+								</li>
+								<li class="li_font_size">
+									16
+								</li>
+								<li class="li_font_size">
+									17
+								</li>
+								<li class="li_font_size">
+									18
+								</li>
+								<li class="li_font_size">
+									20
+								</li>
+								<li class="li_font_size">
+									22
+								</li>
+								<li class="li_font_size">
+									24
+								</li>
+								<li class="li_font_size">
+									26
+								</li>
+								<li class="li_font_size">
+									28
+								</li>
+								<li class="li_font_size">
+									30
+								</li>
+								<li class="li_font_size">
+									32
+								</li>
+								<li class="li_font_size">
+									34
+								</li>
+								<li class="li_font_size">
+									36
+								</li>
+								<li class="li_font_size">
+									38
+								</li>
+								<li class="li_font_size">
+									40
+								</li>
+								<li class="li_font_size">
+									42
+								</li>
+								<li class="li_font_size">
+									44
+								</li>
+								<li class="li_font_size">
+									46
+								</li>
+								<li class="li_font_size">
+									48
+								</li>
+								<li class="li_font_size">
+									50
+								</li>
+								<li class="li_font_size">
+									52
+								</li>
+								<li class="li_font_size">
+									54
+								</li>
+								<li class="li_font_size">
+									56
+								</li>
+								<li class="li_font_size">
+									58
+								</li>
+								<li class="li_font_size">
+									60
+								</li>
+								<li class="li_font_size">
+									70
+								</li>
+								<li class="li_font_size">
+									80
+								</li>
+								<li class="li_font_size">
+									90
+								</li>
+								<li class="li_font_size">
+									100
+								</li>
+								<li class="li_font_size">
+									200
+								</li>
+								<li class="li_font_size">
+									300
+								</li>
+							</ul>
+							<div class="avast_textcontrol_on font_color" title="字体颜色">
+								<input class="input_font_color" type="text" value="000000" />
+							</div>
+							<div class="avast_textcontrol_on font_line" title="行高">
+							</div>
+							<ul class="ul_textcontrol_on ul_font_line">
+								<li class="li_font_line_height">
+									自适应
+								</li>
+								<li class="li_font_line">
+									0
+								</li>
+								<li class="li_font_line">
+									1.0
+								</li>
+								<li class="li_font_line">
+									1.15
+								</li>
+								<li class="li_font_line">
+									1.5
+								</li>
+								<li class="li_font_line">
+									1.75
+								</li>
+								<li class="li_font_line">
+									2.0
+								</li>
+								<li class="li_font_line">
+									2.5
+								</li>
+								<li class="li_font_line">
+									3.0
+								</li>
+								<li class="li_font_line">
+									3.5
+								</li>
+								<li class="li_font_line">
+									4.0
+								</li>
+								<li class="li_font_line">
+									4.5
+								</li>
+								<li class="li_font_line">
+									5.0
+								</li>
+							</ul>	
+							<div class="avast_textcontrol_on font_aling" title="文本对齐方式">
+							</div>
+							<ul class="ul_textcontrol_on ul_font_aling">
+								<li class="li_font_aling" id="font_aling1">
+									居中
+								</li>
+								<li class="li_font_aling" id="font_aling2">
+									居左
+								</li>
+								<li class="li_font_aling" id="font_aling3">
+									居右
+								</li>
+							</ul>	
+						</div>
+						<div class="avast_textcontrol_con">
+							<div class="avast_textcontrol_on font_padding" title="选择字体">
+							</div>
+							<ul class="ul_textcontrol_on ul_font_padding">
+								<li class="li_font_padding">
+									serif
+								</li>
+								<li class="li_font_padding">
+									Sans-serif
+								</li>
+								<li class="li_font_padding">
+									黑体
+								</li>
+								<li class="li_font_padding">
+									仿宋
+								</li>
+								<li class="li_font_padding">
+									幼圆
+								</li>
+								<li class="li_font_padding">
+									楷体
+								</li>
+								<li class="li_font_padding">
+									隶体
+								</li>
+								<li class="li_font_padding">
+									宋体
+								</li>
+								<li class="li_font_padding">
+									新宋体
+								</li>
+								<li class="li_font_padding">
+									微软雅黑
+								</li>
+								<li class="li_font_padding">
+									华文细黑
+								</li>
+								<li class="li_font_padding">
+									华文行楷
+								</li>
+								<li class="li_font_padding">
+									华文彩云
+								</li>
+								<li class="li_font_padding">
+									华文中宋
+								</li>
+								<li class="li_font_padding">
+									华文隶书
+								</li>
+								<li class="li_font_padding">
+									华文新魏
+								</li>
+								<li class="li_font_padding">
+									方正舒体
+								</li>
+								<li class="li_font_padding">
+									Arial
+								</li>
+								<li class="li_font_padding">
+									Georgia
+								</li>
+								<li class="li_font_padding">
+									Tahoma
+								</li>
+								<li class="li_font_padding">
+									Verdana
+								</li>
+								<li class="li_font_padding">
+									Monaco
+								</li>
+							</ul>
+							<div class="avast_textcontrol_on font-weight" title="文字加粗">
+							</div>
+							<div class="avast_textcontrol_on font_italic" title="文字倾斜">
+							</div>
+							<div class="avast_textcontrol_on font_underline" title="文字下划线">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 文本编辑器end -->
+			<!-- 自定义元素区域图片 -->
+			<div class="index_file">
+				<div class="index_file_title">
+					上传自定义图片
+				</div>
+				<div class="new-contentarea">
+					<a href="javascript:void(0)" class="upload-img">
+						<label for="upload-file"></label>
+					</a>
+					<input type="file" name="file" onchange="ajaxFileUpload('upload-img');" id="upload-img" />
+				</div>
+			</div>
+			<!-- 自定义元素区域图片end -->
+			<!-- 图层上下级编辑面板 -->
+			<div class="avast_index_top_txt">
+				<button class="move_span move_span_most_top" title="移至最顶层"></button>
+				<button class="move_span move_span_top" title="上移一层"></button>
+				<button class="move_span move_span_most_bottom" title="移至最底层"></button>
+				<button class="move_span move_span_bottom" title="下移一层"></button>
+				<button class="move_span copy_span" title="复制"></button>
+				<button class="move_span delete_span" title="删除"></button>
+				<span class="move_span_tuodong" title="按住拖动"></span>
+			</div>
+			<!-- 图层上下级编辑面板end -->
+			<!-- 编辑区 面板 -->
+			<div class="avast_index_left_txt">
+				<div class="avast_index_left_txt_title">
+					设置样式
+				</div>
+				<div class="index_svg">
+					<div class="avast_index_left_txt_1">
+						背景
+						<div class="avast_index_right_txt">
+							<input class="index_svg_color" type="text" value="ffffff" />
+						</div>
+					</div>
+				</div>
+				<div class="avast_index_index">
+					<div class="avast_index_left_txt_1">
+						背景
+						<div class="avast_index_right_txt">
+							<input class="dropdown-toggle" type="text" value="ffffff" />
+						</div>
+					</div>
+					<div class="avast_index_left_txt_2">
+						边框
+						<div class="avast_border_right">
+							<div class="avast_border_right_01">
+								大小
+								<div class="avast_border_daxiao">
+									<button class="avast_border_jia" title="增加">
+									</button>
+									<div class="avast_border_txt">
+										<input type="text" value="" id="avast_border">
+									</div>
+									<button class="avast_border_jian" title="减少">
+									</button>
+								</div>
+							</div>
+							<div class="avast_border_right_01">
+								样式
+								<select class="avast_border_right_select">
+									<option value="volvo">默认</option>
+									<option value="dashed">虚线轮廓</option>
+									<option value="solid">实线轮廓</option>
+									<option value="dotted">点状轮廓</option>
+									<option value="double">双线轮廓</option>
+									<option value="groove">3D凹槽轮廓</option>
+									<option value="ridge">3D凸槽轮廓</option>
+									<option value="inset">3D凹边轮廓</option>
+									<option value="outset">3D凸边轮廓</option>
+								</select>
+							</div>
+							<div class="avast_border_right_01">
+								颜色
+								<div class="avast_border_right_txt">
+								<input class="dropdown-border" type="text" value="ffffff" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="avast_index_left_txt_1">
+					圆角
+					<div class="avast_yuanjiao">
+						<div class="slider-range-max">
+						</div>
+					</div>
+					<div class="avast_yuanjiao_input">
+						<input type="text" value="" id="amount" class="avast_input_input">
+					</div>
+				</div>
+				<div class="avast_index_left_txt_1">
+					透明
+					<div class="avast_touming">
+						<div class="slider-range-touming">
+						</div>
+					</div>
+					<div class="avast_touming_input">
+						<input type="text" value="" id="avast_touming" class="avast_touming_touming">
+					</div>
+				</div>
+				<div class="avast_index_left_txt_1">
+					旋转
+					<div class="avast_xuanzhuan">
+						<div class="slider-range-xuanzhuan">
+						</div>
+					</div>
+					<div class="avast_xuanzhuan_input">
+						<input type="text" value="" id="avast_xuanzhuan" class="avast_xuanzhuan_xuanzhuan">
+					</div>
+				</div>
+				<div class="avast_index_left_txt_1">
+					位置
+					<div class="avast_weizhi">
+						<div class="avast_weizhiX">
+							Y轴
+							<input type="text" id="avast_input_weizhiX" class="avast_input_weizhiX" value="0">
+						</div>
+						<div class="avast_weizhiY">
+							X轴
+							<input type="text" id="avast_input_weizhiY" class="avast_input_weizhiY" value="0">
+						</div>
+					</div>
+				</div>
+				<div class="avast_index_left_txt_1">
+					大小
+					<div class="avast_kuangao">
+						<div class="avast_kuangaoX">
+							宽
+							<input type="text" id="avast_input_kuangaoX" class="avast_input_kuangaoX" value="0">
+						</div>
+						<div class="avast_kuangaoY">
+							高
+							<input type="text" id="avast_input_kuangaoY" class="avast_input_kuangaoY" value="0">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 编辑区 面板end -->
+			<!-- 发布应用 -->
+			<div class="fabu_index">
+				<div class="fabu_index_cn">
+					<div class="fabu_index_cn_title">
+						
+						   
+						        <span>
+								   确认发布当前应用吗？
+							    </span>
+						   
+						   
+						
+					</div>
+					<div class="fabu_index_cn_anniu">
+						<div class="fabu_index_cn_anniu_quxiao">
+							取消
+						</div>
+						
+						   
+						       <div class="fabu_index_cn_anniu_queding" onclick="onSbmit();">
+								  发布
+							   </div>
+						   
+						   
+						
+					</div>
+				</div>
+			</div>
+			<!-- 发布应用end -->
+			<!-- 鼠标右键功能 -->
+			<div class="right_click" style="display:none">
+				<ul>
+					<li class="right_click_top">上移一层<br><br></li>
+					<li class="right_click_bottom">下移一层<br><br></li>
+					<li class="right_click_most_top">移至顶层<br><br></li>
+					<li class="right_click_most_bottom">移至底层<br><br></li>
+					<li class="right_click_most_copy">复制<br><br></li>
+					<li class="right_click_delete">删除<br><br></li>
+				</ul>
+			</div>
+			<!-- 鼠标右键功能end -->
+			<!-- 模拟键盘复制功能 -->
+			<div class="ctrl_c" style="display:none;">
+				已复制，Ctrl+V粘贴
+			</div>
+			<!-- 模拟键盘复制功能end -->
+			<!-- 自定义开关 -->
+			<div class="avast-zidingyi-kaiguan">
+				<div class="avast-zidingyi-kaiguan-title">
+					自定义开关
+				</div>
+				<div class="avast-zidingyi-kaiguan-centent">
+					<div class="zidingyi-kaiguan-on zidingyi-kaiguan-1">
+						组态库选择
+					</div>
+					<div class="zidingyi-kaiguan-on zidingyi-kaiguan-2">
+						自定义上传
+					</div>
+					<div class="zidingyi-kaiguan-on zidingyi-kaiguan-3">
+						图形库选择
+					</div>
+				</div>
+			</div>
+			<!-- 自定义开关end -->
+			<!-- 组态库选择开关 -->
+			<div class="zutaiku_xuanze zidiying-index">
+				<div class="zutaiku_xuanze_con">
+					<div class="zutaiku_xuanze_title">
+						向右拖拽组态库图形元素放到开关区域
+					</div>
+					<div class="zutaiku_xuanze_cont">
+						<div class="zutaiku_xuanze_img">
+							
+						</div>
+						<div class="zutaiku_xuanze_bianji">
+							<div class="zutaiku_xuanze_bianji_kaiguan">
+								<div class="zutaiku_xuanze_bianji_title">
+									开
+								</div>
+								<div class="zutaiku_xuanze_bianji_one zutaiku_xuanze_bianji_on">
+								
+								</div>
+							</div>
+							<div class="zutaiku_xuanze_bianji_kaiguan">
+								<div class="zutaiku_xuanze_bianji_title">
+									关
+								</div>
+								<div class="zutaiku_xuanze_bianji_one zutaiku_xuanze_bianji_off">
+								
+								</div>
+							</div>
+							<div class="avast_switch_yulan">
+								<div class="avast_switch_yulan_title">
+									点击预览效果
+								</div>
+								<div class="avast_switch_yulan_con">
+									<div class="avast_switch_yulan_on">
+									</div>
+									<div class="avast_switch_yulan_off" style="display:none;">
+									</div>
+								</div>
+							</div>
+							<div class="zutaiku_tijiao">
+								<div class="zutaiku_tijiao_quxiao">
+									取消
+								</div>
+								<div class="zutaiku_tijiao_tijiao">
+									确认
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 组态库选择开关end -->
+			<!-- 自定义上传开关 -->
+			<div class="zidingyi_xuanze zidiying-index">
+				<div class="zidingyi_xuanze_on">
+					<div class="zidingyi_xuanze_title">
+						自定义上传开关图片
+					</div>
+					<div class="zidingyi_xuanze_one">
+						<div class="zidingyi_xuanze_one_left">
+							<div class="zidingyi_xuanze_one_left_one">
+								开
+								<div class="zidingyi_xuanze_one_left_on_img">
+									<a href="javascript:void(0)" class="zidignyi_upload-img">
+										<div class="zidinyi_on">
+											<!-- 上传图片路径输出到这里 -->
+											<img src="./images/zutai/z_jiahao.png" class="on upd_open" />
+										</div>
+										<label for="upload-file" style="display:none;">
+										</label>
+									</a>
+									<input type="file" name="file" id="upload-open" onchange="ajaxFileUpload('upload-open')" />
+								</div>
+							</div>
+							<div class="zidingyi_xuanze_one_left_one">
+								关
+								<div class="zidingyi_xuanze_one_left_on_img">
+									<a href="javascript:void(0)" class="zidignyi_upload-img">
+										<div class="zidinyi_off">
+											<!-- 上传图片路径输出到这里 -->
+											<img src="./images/zutai/s_jiahao.png" class="off upd_close"/>
+										</div>
+										<label for="upload-file" style="display:none;">
+										</label>
+									</a>
+									<input type="file" name="file" id="upload-close" onchange="ajaxFileUpload('upload-close')" />
+								</div>
+							</div>
+						</div>
+						<div class="zidingyi_xuanze_one_right">
+							<div class="zidingyi_yulan">
+								点击预览效果
+							</div>
+							<div class="zidingyi_switch_yulan">
+								<div class="zidingyi_switch_yulan_on">
+									<img src="./images/zutai/z_jiahao.png" />
+								</div>
+								<div class="zidingyi_switch_yulan_off" style="display:none;">
+									<img src="./images/zutai/s_jiahao.png" />
+								</div>
+							</div>
+							<div class="zidingyi_tijiao">
+								<div class="zidingyi_tijiao_quxiao">
+									取消
+								</div>
+								<div class="zidingyi_tijiao_tijiao">
+									确认
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 自定义上传开关end -->
+			<!-- 图形库自定义 -->
+			<div class="tuxingku_xuanze zidiying-index">
+				<div class="tuxingku_xuanze_on">
+					<div class="tuxingku_xuanze_title">
+						向右拖拽图形库元素放到开关区域
+					</div>
+					<div class="tuxingku_xuanze_cont">
+						<div class="tuxingku_svg_left">
+							<div class="tuxingku_svg">
+								<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+								  <rect class="myCircle" width="100%" height="100%" fill="#56abe4" style="stroke-width:0;stroke:rgb(0,0,0)" />
+								</svg>
+							</div>
+							<div class="tuxingku_svg">
+								<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+									<ellipse class="myCircle" cx="50%" cy="50%" rx="50%" ry="50%" fill="#56abe4" style="stroke:purple;stroke-width:0" />
+								</svg>
+							</div>
+						</div>
+						<div class="tuxingku_svg_right">
+							<div class="tuxingku_svg_kaiguan">
+								<div class="tuxingku_svg_kaiguan_title ">
+									开
+								</div>
+								<div class="tuxingku_svg_kaiguan_one tuxingku_svg_on">
+								
+								</div>
+							</div>
+							<div class="tuxingku_svg_kaiguan">
+								<div class="tuxingku_svg_kaiguan_title ">
+									关
+								</div>
+								<div class="tuxingku_svg_kaiguan_one tuxingku_svg_off">
+								
+								</div>
+							</div>
+							<div class="tuxingku_svg_yulan">
+								点击预览效果
+							</div>
+							<div class="tuxingku_svg_switch_yulan">
+								<div class="tuxingku_svg_switch_yulan_on">
+								</div>
+								<div class="tuxingku_svg_switch_yulan_off" style="display:none;">
+								</div>
+							</div>
+							<div class="tuxingku_svg_tijiao">
+								<div class="tuxingku_svg_tijiao_quxiao">
+									取消
+								</div>
+								<div class="tuxingku_svg_tijiao_tijiao">
+									确认
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 图形库自定义end -->
+			<!-- 对齐方式 -->
+			<div class="avast_alignment">
+				<div class="avast_alignment_title">
+					选择对齐方式
+				</div>
+				<div class="avast_alignment_html">
+					<div class="avast_alignment_left avast_alignment_body">
+						左对齐
+					</div>
+					<div class="avast_alignment_conter_cn avast_alignment_body">
+						垂直居中对齐
+					</div>
+					<div class="avast_alignment_conter_fen avast_alignment_body">
+						垂直平均分布
+					</div>
+					<div class="avast_alignment_right avast_alignment_body">
+						右对齐
+					</div>
+					<div class="avast_alignment_top avast_alignment_body">
+						上对齐
+					</div>
+					
+					<div class="avast_alignment_conter avast_alignment_body">
+						水平居中对齐
+					</div>
+					<div class="avast_alignment_conterfen avast_alignment_body">
+						水平平均分布
+					</div>
+					<div class="avast_alignment_bottom avast_alignment_body">
+						下对齐
+					</div>
+				</div>
+			</div>
+			<!-- 对齐方式end -->
+			<!-- 成组 -->
+			<div class="avast_Group">
+				<div class="avast_Group_title">
+				</div>
+				<div class="avast_Group_html">
+					<div class="avast_Group_html_on">
+						确认成组
+					</div>
+				</div>
+			</div>
+			<!--成组end-->	
+			<!-- 编辑成组 -->
+			<div class="edit_Group">
+				<div class="edit_Group_title">
+					编辑成组
+				</div>
+				<div class="edit_Group_html edit_Group_index">
+					<div class="edit_Group_html_on edit_Group_index_on">
+						编辑成组
+					</div>
+					<div class="edit_Group_html_off edit_Group_index_off">
+						取消成组
+					</div>
+				</div>
+				<div class="edit_Group_html edit_Group_body" style="display:none;">
+					<div class="edit_Group_html_on edit_Group_body_on">
+						编辑完成
+					</div>
+					<div class="edit_Group_html_off edit_Group_body_off">
+						取消编辑
+					</div>
+				</div>
+			</div>
+			<!-- 编辑成组end -->
+			<!-- 手机版 -->
+			<div class="Mobile_phone">
+				<div class="Cell_phone_model">
+					<span class="Cell_phone_model_span">iphone6/7 plus</span>
+					<span class="iconfont icon-phone"></span>
+					<div class="Choice_phone">
+						<ul>
+							<li class="li_Choice_phone" id="phone1">
+								<span class="Choice_phone_span iconfont Choice_phone_span_ico">
+								</span>
+								<span class="Choice_phone_li">
+									iphone6/6s/7 plus
+								</span>
+							</li>
+							<li class="li_Choice_phone" id="phone2">
+								<span class="Choice_phone_span iconfont">
+								</span>
+								<span class="Choice_phone_li">
+									iphone6/6s/7
+								</span>
+							</li>
+							<li class="li_Choice_phone" id="phone3">
+								<span class="Choice_phone_span iconfont">
+								</span>
+								<span class="Choice_phone_li">
+									iphone5/5c/5s
+								</span>
+							</li>
+							<li class="li_Choice_phone" id="phone4">
+								<span class="Choice_phone_span iconfont">
+								</span>
+								<span class="Choice_phone_li">
+									iphone4/4s
+								</span>
+							</li>
+							<li class="li_Choice_phone" id="phone5">
+								<span class="Choice_phone_span iconfont">
+								</span>
+								<span class="Choice_phone_li">
+									安卓
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="Cell_phone Cell_phone_x" name="414">
+					414
+				</div>
+				<div class="Cell_phone_o">
+					X
+				</div>
+				<div class="Cell_phone Cell_phone_y" name="736">
+					736
+				</div>
+				<div class="Cross_screen iconfont">
+				</div>
+				<div class="Cell_phone_yidong">
+				</div>
+			</div>
+			<!-- 手机版end -->
+		</div>
+		
+		<script src="./js/zutai/sui.js"></script>
+		<script src="./js/zutai/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="./js/zutai/jpicker-1.1.6.js"></script>
+		<script src="./js/zutai/index.js"></script>
+		<script type="text/javascript" src="./js/jquery-form.js"></script>
+		<script type="text/javascript" src="./js/ajaxfileupload.js"></script>
+		<script type="text/javascript">
+		  function saveZutai(flag){
+		        $("#flag").val(flag);
+		        window.onbeforeunload = function() {}
+		        if($("#appname").val() == ""){
+		           alert("应用名称不能为空！");
+		           return;
+		        }
+		        var islogin = $("#isLogin").val();
+			     if('1' == islogin){
+			        if($("#username").val() == "" || $("#password").val() == ""){
+			           alert("用户名和密码不能为空！");
+			           return false;
+			        }
+			     }
+	            var zujian = $(".avast_index_li .avast_chuanganqi_ico");	
+		        if(null!=zujian && zujian.length > 0){
+			         for(var i = 0;i<zujian.length;i++){
+			              var showtype = $(zujian[i]).attr("show");
+			              if("shuzhi1" == showtype){
+				               $(zujian[i]).find(".avast_sensorSZ").html("");
+				               var sensorId = $(zujian[i]).find(".index_choice_sc").find(".index_choice_chuanganqi").attr("title");
+				               var unit = $(zujian[i]).find(".index_choice_sc").find(".index_choice_chuanganqi").attr("unit");
+				               var st = $(zujian[i]).find(".index_choice_sc").find(".st").attr("title");
+				               var _time = "";
+				               if("1" == st){
+				                  _time = "<br><span class='st_"+sensorId+"'></span>";
+				               }
+				               if(undefined == unit){
+				                  unit = "";
+				               }
+				               $(zujian[i]).find(".avast_sensorSZ").append("<span class='s_"+sensorId+"'>00</span><span class='unit_"+sensorId+"'>&nbsp;"+unit+"</span>"+_time);
+				          }else{
+				              var flag = $(zujian[i]).attr("flag");
+					          var deviceId = $(zujian[i]).find(".index_choice_sc").find(".index_choice_shebei").attr("title");
+					          var sensorId = "";
+					          var sensor = $(zujian[i]).find(".index_choice_sc").find(".index_choice_chuanganqi");
+					          if(null!=sensor && sensor.length > 0){
+					             for(var j = 0;j<sensor.length;j++){
+					                 sensorId += $(sensor[j]).attr("title");
+					                  if(sensor.length > 1){
+					                    sensorId += ",";
+					                  }
+					             }
+					          }
+					          if("yibiao" == flag){
+					             var min = $(zujian[i]).find(".index_choice_sc").find(".index_choice_min").val();
+					             var max = $(zujian[i]).find(".index_choice_sc").find(".index_choice_max").val();
+					             $(zujian[i]).find("iframe").attr("src","/web/configuration/showdata.htm?deviceId="+deviceId+"&sensorIds="+sensorId+"&showtype="+showtype+"&max="+max+"&min="+min);
+					          }else{
+					             var src = "/web/configuration/showdata.htm?deviceId="+deviceId+"&sensorIds="+sensorId+"&showtype="+showtype;
+					             if("kaiguan" == flag){
+					                if('kaiguan5' == showtype){
+					                   $(zujian[i]).find(".avast_sensorKG").addClass("_switcher"+sensorId);
+				               		   var sensorType = $(zujian[i]).find(".index_choice_sc").find(".index_choice_chuanganqi").attr("type");
+					                   if(sensorType == '2'){
+						                   $(zujian[i]).find(".avast_on").attr("onclick","switchVal('"+sensorId+"','0');");
+						                   $(zujian[i]).find(".avast_off").attr("onclick","switchVal('"+sensorId+"','1');");
+					                   }
+					                }else{
+						                $(zujian[i]).find(".avast_on").html(""); 
+						                $(zujian[i]).find(".avast_on").append("<iframe class='avast_iframe' frameborder='0' scrolling='no' src='"+src+"'></iframe>"); 
+					                }
+					             }else{
+					                //var tm = $(zujian[i]).find(".index_choice_sc").find(".tm").attr("title");
+					                var tm = "1";
+					                src+="&tm="+tm;
+					                $(zujian[i]).find("iframe").attr("src",src);
+					             }
+					          }
+				          }
+			         }
+		        }
+		        $("#avast_table").remove();
+		        $("#avast_index").hide();
+		        $(".avast_iframe_z").hide();
+		        $(".body").find("script").remove();
+		        $("#_html").val($(".body").html());
+		        $("#username").attr("disabled",false);
+		        $("#password").attr("disabled",false);
+		        $("#zutaiForm").submit();
+		 }
+		 
+		 function preview(){
+		    window.onbeforeunload = function() {}
+		    window.location.href="./html/yibiao1.html"
+		 }
+		 
+		  function setMax(val){
+		     var max_input = $(".html").find(".index_choice_sc").find(".index_choice_max").val();
+		     if(undefined == max_input){
+	     	 	$(".html").find(".index_choice_sc").append("<input type='hidden' class='index_choice_max' value='"+val+"' />");
+	     	 }else{
+	     	    $(".html").find(".index_choice_sc").find(".index_choice_max").val(val);
+	     	 }
+		  }
+		  function setMin(val){
+	    	 var min_input = $(".html").find(".index_choice_sc").find(".index_choice_min").val();
+		     if(undefined == min_input){
+	     	 	$(".html").find(".index_choice_sc").append("<input type='hidden' class='index_choice_min' value='"+val+"' />");
+	     	 }else{
+	     	    $(".html").find(".index_choice_sc").find(".index_choice_min").val(val);
+	     	 }
+		  }
+		  
+		 function onSbmit(){
+		    $("#status").val("1");
+		    saveZutai();
+		 } 
+		  
+		function ajaxFileUpload(id){
+		    var link = $("#_link").val();
+		    $(".avast_logding").show();
+			$.ajaxFileUpload({
+		  			url:'/web/configuration/uploadImg.htm',
+		  			secureuri:false,
+		  			data:{link:link}, 
+		  			fileElementId:id,           			
+		  			dataType:'text',                      
+		  			success:function(data, status){       
+		      			if(data.substring(0, 1) == 0){     //0表示上传成功(后跟上传后的文件路径),1表示失败(后跟失败描述)
+		          			var picSrc = data.substring(2);
+		          			if('upload-bg' == id){
+		          			   $("#img_bg").attr("src",picSrc);
+		          			   $("#img_bg").show();
+		          			}else if('upload-img' == id){
+		          			   $(".html").find(".upd_img").attr("src",picSrc);
+		          			}else if('upload-appico' == id){
+		          			   $("#upd_ico").attr("src",picSrc);
+		          			   $("#appico").val(picSrc);
+		          			}else if('upload-open' == id){
+		          			  
+							  $(".upd_open").attr("src",picSrc);
+							  
+		          			}else if('upload-close' == id){
+		          			   $(".upd_close").attr("src",picSrc);
+		          			}
+		          			$(".avast_logding").hide();
+		      			}else{
+		         			alert('图片上传失败，请重试~！');
+		      			}
+		  			},
+		  			error:function(data, status, e){ //服务器响应失败时的处理函数
+		      			alert('图片上传失败，请重试！！');
+		  			}
+			});
+	     } 
+	    function delbg(){
+	      $("#img_bg").hide();
+	    } 
+	    var UnloadConfirm = {};
+		UnloadConfirm.MSG_UNLOAD = "数据尚未保存，离开后可能会导致数据丢失\n";
+		UnloadConfirm.set = function(a) {
+		    window.onbeforeunload = function(b) {
+		        b = b || window.event;
+		        b.returnValue = a;
+		        return a
+		    }
+		};
+		UnloadConfirm.clear = function() {
+		    fckDraft.delDraftById();
+		    window.onbeforeunload = function() {}
+		};
+		UnloadConfirm.set(UnloadConfirm.MSG_UNLOAD);
+		</script>
+	</body>
+</html>
+
+
+
+

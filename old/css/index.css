@@ -1,0 +1,2335 @@
+@charset "utf-8";
+body 
+	{
+		font-size:16px;position:absolute;top:0;left:0;right:0;bottom:0;
+	}
+.container-index
+	{
+		position:absolute;top:0;left:0;right:0;bottom:0;
+	}
+.container-icon
+	{
+		background-image: url("../images/zutai/icon.png");
+		background-repeat:no-repeat;
+	}
+li
+	{
+		list-style-type:none;
+	}
+
+	/* 公共end */
+	/* 顶部工具区 */
+.avast_top
+	{
+		position:absolute;width:100%;height:36px;top:0;left:0;box-shadow:-2px 1px 4px 1px rgba(0, 0, 0, .3);background-color:#e5e5e5;z-index:1001;font-size:14px;line-height:36px;
+	}
+.avast_top_txt
+	{
+		position:absolute;left:0;top:0;width:200px;height:36px;text-align:center; 
+	}
+.avast_top_icon
+	{
+		position:absolute;left:200px;top:0;width:36px;height:36px;
+	}
+.avast_top_icon_a
+	{
+		float:left;width:32px;height:32px;background-position:-363px 0px;
+	}
+.avast_top_icon_a:before 
+	{
+	  content: "";width:1px;height:20px;background-color:#696969;position:absolute;top:8px;right:-13px;
+	}	
+.avast_top_icon_1
+	{
+		position:absolute;top:2px;left:250px;width:auto;height:32px;line-height:32px;
+	}
+.avast_top_icon_a_1
+	{
+		float:left;margin-left:10px;width:32px;height:32px;background-position:0px 0px;
+	}
+.avast_top_icon_a_1_1
+	{
+		background-position:0px -33px;
+	}	
+.avast_top_icon_a_2
+	{
+		float:left;margin-left:10px;width:32px;height:32px;background-position:-33px 0px;
+	}
+.avast_top_icon_a_2_1
+	{
+		background-position:-33px -33px;
+	}	
+.avast_top_icon_a_3
+	{
+		float:left;margin-left:10px;width:32px;height:32px;background-position:-66px 0px;
+	}
+.avast_top_icon_a_3_1
+	{
+		background-position:-66px -33px;
+	}	
+.avast_top_icon_a_4
+	{
+		float:left;margin-left:10px;width:32px;height:32px;background-position:-99px 0px;
+	}
+.avast_top_icon_a_4_1
+	{
+		background-position:-99px -167px;
+	}	
+.avast_top_icon_a_5
+	{
+		float:left;margin-left:10px;width:32px;height:32px;background-position:-132px 0px;
+	}
+.avast_top_icon_a_5_1
+	{
+		background-position:-132px -101px;
+	}	
+.avast_top_icon_a_6
+	{
+		float:left;margin-left:10px;width:36px;height:36px;background-position:-165px 0px;
+	}
+.avast_top_icon_a_6_1
+	{
+		background-position:-165px -65px;
+	}	
+.avast_top_icon_a_7
+	{
+		float:left;margin-left:10px;width:36px;height:36px;background-position:-198px 0px;
+	}
+.avast_top_icon_a_7_1
+	{
+		background-position:-198px -134px;
+	}	
+.avast_top_icon_a_8
+	{
+		float:left;margin-left:10px;width:36px;height:36px;background-position:-231px 0px;
+	}
+.avast_top_icon_a_8_1
+	{
+		background-position:-231px -34px;
+	}	
+.avast_top_icon_a_9
+	{
+		float:left;margin-left:10px;width:36px;height:36px;background-position:-264px 0px;
+	}
+.avast_top_icon_a_9_1
+	{
+		background-position:-264px -32px;
+	}	
+.avast_top_icon_a_10
+	{
+		position:relative;float:left;margin-left:10px;width:36px;height:36px;background-size:30px;
+	}
+.avast_top_icon_a_10:after 
+	{
+		content: '';position:absolute;top:5px;left:5px;width:26px;height:26px;background-position:0px;background-size:26px;background-repeat:no-repeat;background-image:url("../images/zutai/huabu.png");
+	}	
+.avast_top_icon_a_11
+	{
+		float:left;margin-left:10px;width:36px;height:36px;background-position:-297px 0px;
+	}
+.avast_top_icon_a_11_1
+	{
+		background-position:-297px -32px;
+	}		
+.avast_top_icon_a_12
+	{
+		float:left;margin-left:10px;width:36px;height:36px;background-position:-330px 0px;
+	}
+.avast_top_icon_a_12_1
+	{
+		background-position:-330px -34px;
+	}		
+.avast_top_icon_2
+	{
+		position:absolute;top:0;right:0;width:250px;height:36px;line-height:36px;
+	}
+.avast_top_icon_2:before 
+	{
+	  content: "";width:1px;height:20px;background-color:#696969;position:absolute;top:8px;left:0;
+	}
+.avast_top_icon_2-1
+	{
+		margin-left:30px;float:left;height:36px;text-align:center;
+	}
+.avast_top_icon_a_14
+	{
+		float:left;width:60px;height:36px;background-position:-462px 0px;text-align:right;
+	}
+	/* 顶部工具区end */
+	/* 左侧工具区 */
+.avast_left
+	{
+		position:absolute;width:250px;top:35px;left:0;bottom:0;right:auto;z-index:999;box-shadow:1px -2px 4px 3px rgba(0, 0, 0, .2);background-color:#e5e5e5;
+	}	
+.avast_left_a
+	{
+		position:absolute;width:40px;height:40px;top:50%;margin-top:-20px;background-repeat:no-repeat;background-size:40px 40px;z-index:999;left:230px;background-image:url("../images/zutai/sectionhiden_01.png");
+	}
+.avast_left_b
+	{
+		display:none;position:absolute;width:40px;height:40px;top:50%;margin-top:-20px;background-repeat:no-repeat;background-size:40px 40px;z-index:999;left:0px;background-image:url("../images/zutai/sectionhiden_02.png");
+	}
+.avast_tab
+	{
+		width:250px;height:50px;margin:0;padding:0px;background-color:#bfbfbf;
+	}
+.avast_tab_ul
+	{
+		width:180px;height:50px;list-style:none;margin:0 auto;padding:0px;
+	}	
+.avast_tab_ul li
+	{
+		float:left;width:60px;height:50px;
+	}
+.avast_tab_ul li:hover
+	{
+		background-color:#e5e5e5;
+	}	
+.avast_tab_ul_icon1
+	{
+		float:left;margin:7px 0px 0px 12px;width:36px;height:36px;line-height:50px;background-position:-396px -33px;
+	}
+.avast_tab_ul_icon2
+	{
+		float:left;margin:7px 0px 0px 12px;width:36px;height:36px;line-height:50px;background-position:-429px -33px;
+	}
+.avast_tab_ul_icon3
+	{
+		float:left;margin:7px 0px 0px 12px;width:36px;height:36px;line-height:50px;background-position:-462px -33px;
+	}	
+.active
+	{
+		background-color:#e5e5e5;
+	}
+.tab-content
+	{
+		position:absolute;width:250px;top:50px;left:0;right:auto;bottom:0;overflow-y:auto;overflow-x:hidden;
+	}
+.avast_left_ico
+	{
+		width:250px;position:absolute;top:0;left:0;right:0;bottom:0;
+	}
+	/* 组态更新 */
+.avast-left-h2
+	{
+		background-color:#999da3;display: block;cursor:pointer;position:relative;margin:2px 0 0 0;padding:.5em 2.9em .5em .7em;min-height:0;font-size:100%;
+	}
+.avast-left-h21
+	{
+		margin:0px !important;
+	}	
+.avast-left-h2 a
+	{
+		text-decoration:none;font-weight:500;color:rgba(255,255,255,.8);
+	}	
+.avast-left-h2 a:hover
+	{
+		text-decoration:none;
+	}	
+.avast-left-h2 a:visited 
+	{
+		text-decoration:none;
+	}
+.ui-icon
+	{
+		width:22px;height:22px;
+	}	
+.ui-icon-triangle-1-s:after 
+	{
+		content:'';position:absolute;top:8px;right:8px;width:22px;height:22px;background-position:0px;background-repeat:no-repeat;background-image:url("../images/zutai/j-down.png");background-size:contain;
+	}		
+.ui-icon-triangle-1-e:after 
+	{
+		content:'';position:absolute;top:8px;right:8px;width:22px;height:22px;background-position:0px;background-repeat:no-repeat;background-image:url("../images/zutai/j-left.png");background-size:contain;
+	}	
+.avast-left-div
+	{
+		width:240px;padding:0 !important;height:auto;overflow:auto;display:none;
+	}
+	
+.avast-left-div ul
+	{
+		width:240px;margin:0px 5px 0px 5px;padding:0;
+	}
+.avast-left-div ul li
+	{
+		float:left;width:50px;height:100px;line-height:100px;padding:0;margin:5px 2px;z-index:2000;list-style-type:none;cursor:move; display:table-cell;vertical-align:middle;z-index:9999;
+	}
+.avast-left-div ul li img
+	{
+		width:45px;max-height:100px;
+	}
+.index_zutai
+	{
+		height:1000px;
+	}	
+.avast_left_txt
+	{
+		width:250px;
+	}
+.avast_left_txt_h2
+	{
+		width:90%;height:40px;line-height:40px;font-size:16px;text-align:center;padding:0;margin:0 auto;border-bottom:1px solid #a9b7b7;color:#33475f;
+	}
+.avast_left_txt_div
+	{
+		width:250px;padding:0 !important;overflow:hidden;
+	}
+.avast_left_txt_div ul
+	{
+		width:250px;margin:0;padding:0;
+	}
+.avast_left_txt_div ul span
+	{
+		cursor:move;
+	}
+.avast_left_txt_div ul span a
+	{
+		cursor:move;color:#000;text-decoration: none;
+	}	
+.avast_left_txt_div_span
+	{
+		float:left;width:125px;height:80px;padding:0;margin:10px 0px;z-index:9999;list-style-type:none;text-align:center;position:relative;word-break:break-all;word-wrap:break-word;
+	}
+.avast_left_text
+	{
+		display:none;
+	}
+.avast_left_txt_div_img
+	{
+		position:relative;height:80px;z-index:10;
+	}
+.avast_left_txt_div_img img
+	{
+		width:60px;height:60px;
+	}	
+.avast_left_txt_div_img_span
+	{
+		position:absolute;left:0;bottom:0;width:100%;height:30px;line-height:30px;font-size:16px;
+	}
+.avast_left_time
+	{
+		float:left;width:125px;height:80px;padding:0;margin:10px 0px;z-index:9999;list-style-type:none;text-align:center;position:relative;word-break:break-all;word-wrap:break-word;
+	}	
+.avast_left_shangchuan
+	{
+		float:left;width:125px;height:80px;padding:0;margin:10px 0px;z-index:9999;list-style-type:none;text-align:center;
+	}	
+.avast_left_shangchuan_img
+	{
+		width:100%;height:100%;display:none;
+	}
+.avast_left_shangchuan_img img
+	{
+		width:100%;height:100%;
+	}	
+.avast_left_shape
+	{
+		position:relative;width:250px;padding:0 !important;
+	}
+.avast_left_shape ul
+	{
+		width:250px;margin:0;padding:0;
+	}
+.avast_left_shape ul span
+	{
+		cursor:move;;
+	}
+/*SVG图形*/
+.avast_left_svg
+	{
+		width:50px;height:50px;line-height:50px;cursor:move;margin:25px 0 0 50px;float:left;position:relative;
+	}
+.avast_left_tuxing
+	{
+		width:50px;height:50px;line-height:50px;cursor:move;margin:25px 0 0 50px;float:left;position:relative;
+	}
+.avast_left_zheng
+	{
+		width:50px;height:50px;background-color:#eb4f38;cursor:move;z-index:9999;
+	}
+.avast_left_yuan
+	{
+		width:50px;height:50px;background-color:#00bb9c;cursor:move;border-radius:50%;z-index:9999;
+	}
+.avast_leftZheng
+	{
+		width:50px;height:50px;background-color:#eb4f38;cursor:move;
+	}
+.avast_leftYuan
+	{
+		width:50px;height:50px;background-color:#00bb9c;cursor:move;border-radius:50%;
+	}	
+.margin
+	{
+		margin:0 !important;
+	}	
+.avast_left_svg svg 
+	{
+		position:absolute;top:0;left:0;
+	}
+.index_svg
+	{
+		display:none;
+	}	
+.input_font_color
+	{
+		display:none;
+	}
+.Icon_font_color
+	{
+		position:relative;float:left;width:66px;height:33px;
+	}	
+.Icon_font_span
+	{
+		top:0px !important;left:0px !important;right:auto !important;width:66px !important;height:33px !important;
+	}
+.Img_font_color
+	{
+		background-position:18px !important;background-size:26px !important;background-repeat:no-repeat !important;background-image: url("../images/zutai/size-color.png") !important;z-index:999;
+	}
+.Alpha_color
+	{
+		z-index:99;
+	}	
+	
+	/* 左侧工具区end */
+	
+	/* 右侧工具区 */
+.avast_right
+	{
+		position:absolute;width:250px;top:35px;left:auto;bottom:0;right:0;z-index:10;box-shadow:-1px -2px 4px 3px rgba(0, 0, 0, .2);background-color:#e5e5e5;
+	}
+.avast_right_a
+	{
+		position:absolute;width:40px;height:40px;top:50%;margin-top:-20px;background-repeat:no-repeat;background-size:40px 40px;z-index:999;right:230px;background-image:url("../images/zutai/sectionhiden_02.png");
+	}
+.avast_right_b
+	{
+		display:none;position:absolute;width:40px;height:40px;top:50%;margin-top:-20px;background-repeat:no-repeat;background-size:40px 40px;z-index:999;right:0px;background-image:url("../images/zutai/sectionhiden_01.png");
+	}
+.avast_tab_right_ul
+	{
+		width:120px;height:50px;list-style:none;margin:0 auto;padding:0px;
+	}
+.avast_tab_right_ul li
+	{
+		float:left;width:60px;height:50px;
+	}
+.avast_tab_ul_icon4
+	{
+		float:left;margin:16px 0px 0px 20px;width:20px;height:20px;background-position:0px 0px;background-image:url("../images/zutai/fabuyingyong.png"); background-repeat:no-repeat;background-size:20px;
+	}
+.avast_tab_ul_icon5
+	{
+		float:left;margin:7px 0px 0px 12px;width:36px;height:36px;line-height:50px;background-position:0px -576px;
+	}
+.tab-right
+	{
+		width:100%;height:100%;background-color:#fff;
+	}	
+	/* 右侧工具区end */	
+	
+	/* 中部编辑区 */
+.avast_index
+	{
+		width:1020px;height:620px;top:100px;position:absolute;background-color:rgba(255,255,255,1);z-index:2;border:1px solid #ddd;
+	}
+#avast_index
+	{
+		width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0);z-index:2;overflow:hidden;background-image:url("../images/zutai/tc.png");background-position:center;
+	}
+#avast_table
+	{
+		width:101%;height:100%;position:absolute;top:-2px;left:-2px;background-color:rgba(0,0,0,0);z-index:-99;
+	}
+.avast_index_li
+	{
+		width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0);z-index:5;
+	}
+.avast_index_li li
+	{
+		width:60px;height:auto;cursor:move;
+	}
+.avast_index_li span
+	{
+		cursor:move;
+	}		
+.avast_index_li li img
+	{
+		z-index:2500;width:100%;height:100%;
+	}
+.ui-resizable-helpers
+	{
+		 border:2px dotted #00F;
+	}
+	/* 中部编辑区end */
+	
+	/* 元素缩放辅助线 */
+.ui-resizable-nw
+	{
+		background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;left:-12px !important;top:-12px !important;
+	}
+.ui-resizable-ne
+	{
+		background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;right:-12px !important;top:-12px !important;
+	}
+.ui-resizable-sw
+	{
+		background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;left:-12px !important;bottom:-12px !important;
+	}
+.ui-resizable-se
+	{
+		background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;right:-12px !important;bottom:-12px !important;
+	}
+.ui-resizable-n
+	{
+		border-bottom:1px solid #08A1EF;width:100% !important;height:12px !important;left:0px !important;top:-17px !important;
+	}
+.ui-resizable-n:before 
+	{
+	  content: "";background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;left:50% !important;top:5px !important;margin-left:-6px;position:absolute;
+	}	
+.ui-resizable-e
+	{
+		border-left:1px solid #08A1EF;width:12px !important;height:100% !important;right:-17px !important;top:0px!important;
+	}
+.ui-resizable-e:before 
+	{
+	  content: "";background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;top:50% !important;left:-7px !important;margin-top:-6px !important;position:absolute;
+	}	
+.ui-resizable-s
+	{
+		border-top:1px solid #08A1EF;width:100% !important;height:12px !important;left:0 !important;bottom:-17px!important;
+	}
+.ui-resizable-s:before 
+	{
+	  content: "";background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;left:50% !important;top:-5px !important;margin-left:-6px !important;position:absolute;
+	}	
+.ui-resizable-w
+	{
+		
+		border-right:1px solid #08A1EF;width:12px !important;height:100% !important;left:-17px !important;top:0px!important;
+	}
+.ui-resizable-w:before 
+	{
+	  content: "";background-color:#fff;border: 1px solid #08A1EF;border-radius:12px;width:12px !important;height:12px !important;left:5px !important;top:50% !important;margin-top:-6px !important;position:absolute;
+	}
+.ui-resizable-a
+	{
+		background-color:#44cb83;border-radius:12px;width:12px !important;height:12px !important;left:50% !important;top:-40px !important;margin-left:-6px !important;position:absolute;
+	}
+.ui-resizable-a:before 
+	{
+		content:"";background-color:#08A1EF;border-radius:12px;width:1px !important;height:16px !important;top:18px !important;left:6px !important;margin-top:-6px !important;position:absolute;
+	}
+	/* 中部区域头部工具栏 */
+.avast_index_top_txt
+	{
+		position:absolute;top:100px;left:50%;margin-left:-165px;width:330px;height:40px;border:1px solid #c6c6c6;border-radius:4px;background-color: #f8f8f8;box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, .2);z-index:9999;display:none;
+	}
+.move_span_tuodong
+	{
+		float:left;margin:3px 3px;width:40px;height:30px;position:relative;cursor:move;
+		background-repeat:no-repeat;border:none;background-color:rgba(0,0,0,0);
+	}
+.move_span_tuodong:after 
+	{
+		position: absolute;top:3px;right:5px;width:26px;height:26px;background-image:url("../images/zutai/tuodong-top.png");background-position:0px;background-size:26px;background-repeat:no-repeat;content: '';
+	}	
+.move_span
+	{
+		float:left;margin:3px 3px;width:40px;height:30px;position:relative;background-image: url("../images/zutai/span.png");cursor:pointer;
+		background-repeat:no-repeat;border:none;background-color:rgba(0,0,0,0);
+	}	
+.move_span_most_top
+	{
+		background-position:0px -30px;
+	}
+.move_span_top
+	{
+		background-position:0px -298px;
+	}	
+.move_span_most_bottom
+	{
+		background-position:0px -86px;
+	}	
+.move_span_bottom
+	{
+		background-position:0px -248px;
+	}	
+.copy_span
+	{
+		background-position:0px -197px;
+	}
+.delete_span
+	{
+		background-position:0px -142px;
+	}	
+button[disabled]
+	{
+		filter: Alpha(Opacity=60);
+		opacity: .6;
+		box-shadow: none;
+		cursor: not-allowed !important;
+	}
+textarea[disabled]
+	{
+		filter: Alpha(Opacity=60);
+		opacity: .6;
+		box-shadow: none;
+		cursor: not-allowed !important;
+	}	
+.avast_index_left_txt
+	{
+		position:absolute;top:189px;right:10px;width:250px;height:600px;background-color:#FFF;border-radius:6px;border:1px solid #999a99;z-index:19;display:none;
+	}
+.avast_index_left_txt_title
+	{
+		width:240px;margin: 0 auto;padding:0 5px;height:50px;line-height:50px;text-align:left;font-size:16px;background-color:#fff;border-bottom:1px solid #e5e5e5;cursor:move
+	}
+.avast_index_left_txt_title:after 
+	{
+		position: absolute;
+		top: 12px;
+		right: 15px;
+		width:26px;
+		height:26px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size:20px;
+		background-repeat: no-repeat;
+		content: '';
+	}	
+.avast_index_left_txt_1
+	{
+		padding:0 10px;height:60px;line-height:60px;text-align:left;font-size:16px;position:relative;
+	}
+.avast_index_left_txt_2
+	{
+		padding:0 10px;height:120px;line-height:120px;text-align:left;font-size:16px;position:relative;
+	}
+.avast_border_right
+	{
+		position:absolute;top:0;right:10px;width:165px;height:120px;border-left:1px solid #eb4f38;padding-left:10px;background-color:rgba(0,0,0,.04);
+	}	
+.avast_index_right_txt
+	{
+		width:100px;height:30px;float:right;margin:15px 0px;border: 1px solid rgba(0, 0, 0, 0.2);position:relative;
+	}		
+.dropdown-toggle
+	{
+		position:absolute;top:1px;left:1px;padding:0 !important;border-radius:0px !important;height:26px !important;width:60px !important;text-align:center;font-size:14px;border:none;    line-height:26px !important;
+	}
+.index_svg_color
+	{
+		position:absolute;top:1px;left:1px;padding:0 !important;border-radius:0px !important;height:26px !important;width:60px !important;text-align:center;font-size:14px;border:none;    line-height:26px !important;
+	}	
+.dropdown-border
+	{
+		position:absolute;top:1px;left:1px;padding:0 !important;border-radius:0px !important;height:26px !important;width:60px !important;text-align:center;font-size:14px;border:none;line-height:26px !important;
+	}	
+.jPicker .Move:after
+	{
+		position:absolute;top:5px;left:15px;width:30px;height:30px;background-image: url("../images/zutai/tuodong.png");background-position:0px;background-size:24px 24px;background-repeat:no-repeat;content: '';
+	}		
+.jPicker .Huabu 
+	{
+		text-align: center;
+		width: 260px;
+		height: 260px;
+		position: absolute;
+		top: 160px;
+		left: 10px;
+	}	
+.jPicker .HuabuS 
+	{
+		text-align: center;
+		width:24px;
+		height: 260px;
+		position: absolute;
+		top: 160px;
+		left: 275px;
+	}		
+.jPicker .Hue
+	{
+		display:none;
+	}	
+.jPicker .Saturation
+	{
+		display:none;
+	}
+.jPicker .Value
+	{
+		display:none;
+	}
+.jPicker .Red
+	{
+		display:none;
+	}
+.jPicker .Green
+	{
+		display:none;
+	}
+.jPicker .Blue
+	{
+		display:none;	
+	}
+.jPicker .Alpha
+	{
+		display:none;
+	}
+.jPicker .Hex
+	{
+		text-align: center;
+		width: 105px;line-height:40px;
+		height: 40px;
+		position: absolute;
+		bottom: 45px;
+		left: 305px;
+	}
+.jPicker .Preview
+	{
+		text-align: center;
+		width: 80px;
+		line-height: 40px;
+		height: 160px;
+		position: absolute;
+		top: 160px;
+		left: 320px;
+	}
+.avast_border_right_01
+	{
+		position:relative;width:100%;height:40px;line-height:40px;font-size:14px;
+	}
+.avast_border_right_select
+	{
+		position:absolute;top:5px;right:0;width:100px;height:30px;background-color:#fff;text-align:center;font-size:14px;border:1px solid rgba(0, 0, 0, 0.2);
+	}
+.avast_border_right_txt
+	{
+		position:absolute;top:5px;right:0;width:100px;height:30px;background-color:#fff;text-align:center;font-size:14px;border:1px solid rgba(0, 0, 0, 0.2);
+	}	
+.avast_border_daxiao
+	{
+		position:absolute;top:5px;right:0px;width:100px;height:30px;
+	}
+.avast_border_jia
+	{
+		position:absolute;top:0;right:0;width:30px;height:30px;cursor:pointer;border:none;background:none;padding:0;
+	}
+.avast_border_jia:after
+	{
+		position:absolute;top:5px;right:2px;width:20px;height:20px;background-image: url("../images/zutai/jia.png");background-position:0px;background-size:20px 20px;background-repeat:no-repeat;content: '';
+	}		
+.avast_border_jian
+	{
+		position:absolute;top:0;left:0;width:30px;height:30px;cursor:pointer;border:none;background:none;padding:0;
+	}
+.avast_border_jian:after
+	{
+		position:absolute;top:5px;left:2px;width:20px;height:20px;background-image: url("../images/zutai/jian.png");background-position:0px;background-size:20px 20px;background-repeat:no-repeat;content: '';
+	}
+.avast_border_txt
+	{
+		position:absolute;top:0;left:32px;width:36px;height:28px;line-height:28px;;
+	}
+#avast_border
+	{
+		position:absolute;top:0;left:0px;width:36px;height:28px;line-height:28px;border:1px solid #ddd;text-align:center
+	}	
+.avast_yuanjiao
+	{
+		position:absolute;top:30px;left:73px;width:90px;height:3px;background-color:#ccc;
+	}
+.slider-range-max
+	{
+		position:absolute;top:0px;left:0px;width:90px;height:3px;
+	}
+.ui-slider-handle
+	{
+		border-radius:50%;background-color:#fff;box-shadow:0px 1px 9px 0px #828282;width:16px !important;height:16px !important;top:-6px !important;
+	}
+.avast_yuanjiao_input
+	{
+		position:absolute;top:0;right:10px;width:60px;height:60px;
+	}
+.avast_input_input
+	{
+		position:absolute;top:19px;right:0px;width:60px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:20px;text-align:center;
+	}
+.avast_touming
+	{
+		position:absolute;top:30px;left:73px;width:90px;height:3px;background-color:#ccc;
+	}
+.slider-range-touming
+	{
+		position:absolute;top:0px;left:0px;width:90px;height:3px;
+	}
+.avast_touming_input
+	{
+		position:absolute;top:0;right:10px;width:60px;height:60px;
+	}
+.avast_touming_touming
+	{
+		position:absolute;top:19px;right:0px;width:60px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:20px;text-align:center;
+	}
+.avast_xuanzhuan
+	{
+		position:absolute;top:30px;left:73px;width:90px;height:3px;background-color:#ccc;
+	}
+.slider-range-xuanzhuan
+	{
+		position:absolute;top:0px;left:0px;width:90px;height:3px;
+	}
+.avast_xuanzhuan_input
+	{
+		position:absolute;top:0;right:10px;width:60px;height:60px;
+	}
+.avast_xuanzhuan_xuanzhuan
+	{
+		position:absolute;top:19px;right:0px;width:60px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:20px;text-align:center;
+	}
+.avast_weizhi
+	{
+		position:absolute;top:16px;right:10px;width:180px;height:34px;font-size:14px;
+	}	
+.avast_weizhiX
+	{
+		position:absolute;top:0px;left:0px;width:90px;height:34px;line-height:30px;text-align:left;
+	}	
+.avast_weizhiY
+	{
+		position:absolute;top:0px;right:0px;width:85px;height:34px;line-height:34px;text-align:left;
+	}
+.avast_input_weizhiX
+	{
+		position:absolute;top:3px;right:8px;width:58px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:25px;text-align:center;
+	}
+.avast_input_weizhiY
+	{
+		position:absolute;top:3px;right:0;width:58px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:25px;text-align:center;
+	}
+.avast_kuangao
+	{
+		position:absolute;top:16px;right:10px;width:180px;height:34px;font-size:14px;
+	}
+.avast_kuangaoX
+	{
+		position:absolute;top:0px;left:0px;width:90px;height:34px;line-height:30px;text-align:left;
+	}
+.avast_kuangaoY
+	{
+		position:absolute;top:0px;right:0px;width:85px;height:34px;line-height:34px;text-align:left;
+	}
+.avast_input_kuangaoX
+	{
+		position:absolute;top:3px;right:8px;width:58px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:25px;text-align:center;
+	}
+.avast_input_kuangaoY
+	{
+		position:absolute;top:3px;right:0;width:58px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:25px;text-align:center;
+	}	
+.avast_text
+	{
+		position:absolute;top:42px;left:15px;width:320px;height:auto !important;background-color:#fff;z-index:1001;box-shadow:0px 0px 8px 1px rgba(0, 0, 0, .1);border:1px solid #eb4f38;display:none;border-radius:6px;
+	}
+.avast_text_title
+	{
+		position:relative;width:300px;margin:0 auto;padding:0 10px;height:40px;line-height:40px;text-align:cneter;font-size:16px;border-bottom:1px solid #999a99;cursor:move
+	}
+.avast_text_title:after 
+	{
+		position: absolute;
+		top:10px;
+		right:15px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}
+.avast_text_span
+	{
+		position:relative;float:left;width:100%;text-align:center;
+	}
+.avast_text_span:after 
+	{
+		position: absolute;
+		top:11px;
+		left:100px;
+		width:18px;
+		height:18px;
+		background-image: url("../images/zutai/text.png");
+		background-position: 0px;
+		background-size: 18px 18px;
+		background-repeat: no-repeat;
+		content: '';
+	}	
+.avast_text_txt
+	{
+		position:relative;width:260px;height:auto;margin:10px auto 10px auto;
+	}
+.avast_text_link
+	{
+		position:relative;width:260px;height:90px;display:none;
+	}
+.avast_text_link_1
+	{
+		position:relative;width:100%;height:45px;line-height:45px;text-align:left;font-size:16px;
+	}
+.avast_text_link_2
+	{
+		position:absolute;top:10px;left:80px;width:26px;height:26px;border: 1px solid #ccc;cursor: pointer;
+	}
+.avast_text_link_3:after
+	{ 
+		position:absolute;top:4px;left:3px;width:20px;height:20px;background-image:url("../images/zutai/duihao.png");background-position:0px;background-size:20px;background-repeat:no-repeat;content:'';
+	}	
+.avast_text_link_input
+	{
+		position:absolute;top:10px;right:0;width:180px;height:30px;line-height:30px;border: 1px solid #ccc;font-size:14px;padding-left:10px;
+	}	
+.avast_text_textarea
+	{
+		width:260px;height:150px;
+	}
+.avast_text_textarea textarea 
+	{
+		width:260px;
+		height: 150px;
+		border: 1px solid #ccc;
+		text-indent: 0;
+		box-sizing: border-box;
+		overflow-x: hidden;resize:none;
+	}
+.avast_text_control
+	{
+		margin-top:0px;width:260px;height:90px;position:relative;
+	}
+.avast_textcontrol_con
+	{
+		width:260px;height:35px;margin-top:10px;margin-left:1px;
+	}
+.avast_textcontrol_on
+	{
+		position:relative;float:left;width:66px;height:35px;border:1px solid #e5e5e5;margin-left:-1px;cursor:pointer;
+	}
+.avast_textcontrol_on:after 
+	{
+		content: '';position:absolute;top:4px;left:18px;width:26px;height:26px;background-position: 0px;background-size: 20px;background-repeat: no-repeat;
+	}
+.font_size:after 
+	{
+		background-image: url("../images/zutai/font-size.png");
+	}
+.font_line:after 
+	{
+		background-image: url("../images/zutai/font_line.png");
+	}	
+.font_aling:after 
+	{
+		background-image: url("../images/zutai/font_aling.png");
+	}
+.font_padding:after 
+	{
+		background-image: url("../images/zutai/font_padding.png");
+	}	
+.font_italic:after 
+	{
+		background-image: url("../images/zutai/font_italic.png");
+	}
+.font-weight:after 
+	{
+		background-image: url("../images/zutai/font-weight.png");
+	}	
+.font_underline:after 
+	{
+		background-image: url("../images/zutai/font_underline.png");
+	}
+.ul_textcontrol_on
+	{
+		position:absolute;width:66px;height:200px;border:1px solid #5bc0de;z-index:100;background-color:#fff;padding:0;margin:0;overflow:auto;display:none;
+	}
+.ul_font_size
+	{
+		top:35px;left:0;
+	}	
+.li_font_size
+	{
+		width:100%;height:30px;line-height:30px;font-size:16px;text-align:center;cursor:pointer;
+	}
+.li_font_size:hover
+	{
+		background-color:#f8f1f1;
+	}
+.ul_font_line
+	{
+		top:35px;left:130px;
+	}
+.li_font_line
+	{
+		width:100%;height:30px;line-height:30px;font-size:16px;text-align:center;cursor:pointer;
+	}
+.li_font_line:hover
+	{
+		background-color:#f8f1f1;
+	}
+.li_font_line_height
+	{
+		width:100%;height:30px;line-height:30px;font-size:16px;text-align:center;cursor:pointer;
+	}
+.li_font_line_height:hover
+	{
+		background-color:#f8f1f1;
+	}	
+.ul_font_aling
+	{
+		top:35px;left:195px;
+	}
+.li_font_aling
+	{
+		width:100%;height:30px;line-height:30px;font-size:16px;text-align:center;cursor:pointer;
+	}
+.li_font_aling:hover
+	{
+		background-color:#f8f1f1;
+	}
+.ul_font_padding
+	{
+		top:80px;left:0;
+	}
+.li_font_padding
+	{
+		width:100%;height:30px;line-height:30px;font-size:12px;text-align:center;cursor:pointer;
+	}
+.li_font_padding:hover
+	{
+		background-color:#f8f1f1;
+	}
+	/* 背景编辑区 */
+.index_background
+	{
+		position:relative;width:250px;height:auto;margin:0 auto;background-color:#fff;
+	}
+.index_background_title
+	{
+		position:relative;padding:0 10px;height:50px;line-height:50px;text-align:left;font-size:16px;background-color:#eee;
+	}
+.index_background_con
+	{
+		position:relative;width:250px;height:auto;
+	}
+.index_background_con_off
+	{
+		position:absolute;top:0;left:0;right:0;bottom:0;z-index:9999;background-color:rgba(0,0,0,.05);
+	}		
+.index_background_span
+	{
+		position:relative;float:right;width:24px;height:24px;border:1px solid #eb4f38;margin:13px 6px 0px 0px;border-radius:2px;cursor:pointer;
+	}
+.index_background_span_on:after 
+	{
+		position:absolute;top:3px;left:1px;width:20px;height:20px;background-image:url("../images/zutai/duihao.png");background-position:0px;background-size:20px;background-repeat:no-repeat;content:'';
+	}	
+.index_background_color 
+	{
+		padding:0 10px;height:60px;line-height:60px;text-align:left;font-size:14px;position:relative;
+	}
+.index_background_color1 
+	{
+		padding:0 10px;height:90px;line-height:60px;text-align:left;font-size:14px;position:relative;
+	}	
+.index_background_colorB
+	{
+		padding:0 10px;height:120px;line-height:60px;text-align:left;font-size:16px;position:relative;
+	}	
+.index_background_color_txt 
+	{
+		width:145px;height:30px;float:right;margin:15px 0px;border:1px solid rgba(0, 0, 0, 0.2);position:relative;
+	}	
+.dropdown_index_background 
+	{
+		position:absolute;top:1px;left:1px;padding:0 !important;border-radius:0px !important;height:26px !important;width:60px !important;text-align:center;font-size:14px;border:none;line-height:26px !important;
+	}	
+.index_background_touming
+	{
+		position:absolute;top:30px;left:95px;width:90px;height:3px;background-color:#ccc;
+	}		
+.index-range-touming
+	{
+		position:absolute;top:0px;left:0px;width:90px;height:3px;
+	}	
+.index_touming_input
+	{
+		position:absolute;top:0;right:10px;width:40px;height:60px;
+	}
+.index_touming_touming
+	{
+		position:absolute;top:19px;right:0px;width:40px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:20px;text-align:center;
+	}
+.index_background_kuangao
+	{
+		position:absolute;top:16px;right:10px;width:145px;height:34px;font-size:14px;
+	}
+.index_background_kuangaoX
+	{
+		position:absolute;top:0px;left:0;width:145px;height:34px;line-height:30px;text-align:left;
+	}
+.index_background_kuangaoY
+	{
+		position:absolute;top:40px;left:0px;width:145px;height:34px;line-height:34px;text-align:left;
+	}
+.index_background_input_kuangaoX
+	{
+		position:absolute;top:3px;right:0;width:100px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:25px;text-align:center;
+	}	
+.index_background_input_kuangaoY
+	{
+		position:absolute;top:3px;right:0;width:100px;height:25px;border:1px solid #ccc;padding:0;margin:0;line-height:25px;text-align:center;
+	}	
+.index_img_shangchuan
+	{
+		position:absolute;top:6px;right:65px;width:50px;height:50px;background-image: url(../images/zutai/shangchuan.png);background-repeat:no-repeat;background-size:50px;
+	}	
+.index_img_shangchuan_input
+	{
+		position:absolute;top:0;right:0;width:50px;height:50px;opacity:0;
+	}
+.index_img_shangchu
+	{
+		position:absolute;top:17px;right:10px;width:50px;height:28px;line-height:28px;text-align:center;border:1px solid #ddd;border-radius:10px;font-size:14px;
+	}		
+ /*选项卡*/
+.ui-tabs
+	{
+		padding:0px !important;position:absolute;top:0;left:0;bottom:0;right:0;
+	}	
+.index_tabs
+	{
+		position:absolute;top:0;left:0;bottom:0;right:auto;width:68px;padding:0px !important;background-color:#bfbfbf;
+	}	
+.index_tabs_li
+	{
+		width:68px;height:54px;line-height:54px;margin:0px !important;font-size:14px;border:1px solid #e5e5e5;
+	}
+.ui-tabs-active
+	{
+		background-color:#FFF;
+	}	
+.ui-tabs-anchor
+	{
+		padding:0px !important;width:68px;height:54px;text-align:center;color:#333;
+	}
+.avast_chuanganqi_ico
+	{
+		width:100%;height:100%;
+	}
+.avast_sensor
+	{
+		width:100%;height:100%;position:relative;overflow:hidden;
+	}
+.ui-tabs-panel
+	{
+		width:166px;height:100%;padding:0 !important;
+	}	
+.tabs_echarts_img
+	{
+		width:166px;height:166px;margin:8px 0 0 6px;cursor:move;box-shadow:0 0 10px #ccc;background-color:#fff;z-index:9999;
+	}	
+.tabs_echarts_img img
+	{
+		width:100%;height:100%;
+	}
+.tabs_echarts_SZ
+	{
+		width:166px;height:166px;margin:8px 0 0 6px;cursor:move;box-shadow:0 0 10px #ccc;background-color:#fff;z-index:9999;
+	}	
+.tabs_echarts_SZ img
+	{
+		width:100%;height:100%;
+	}
+.avast_sensor_SZ
+	{
+		width:100%;height:100%;position:relative;overflow:hidden;
+	}
+.avast_sensorSZ
+	{
+		width:100%;height:100%;disabled:none;
+	}
+.tabs_echarts_KG
+	{
+		cursor:move;width:166px;height:166px;margin:8px 0 0 6px;box-shadow:0 0 10px #ccc;background-color:#fff;z-index:9999;
+	}	
+.avast_on
+	{
+		width:100%;height:100%;
+	}
+.avast_off
+	{
+		width:100%;height:100%;
+	}	
+.tabs_echartsKG img
+	{
+		width:100%;height:100%;
+	}	
+.avast_sensor_KG
+	{
+		width:100%;height:100%;position:relative;overflow:hidden;
+	}
+.avast_sensorKG
+	{
+		width:100%;height:100%;display:none;
+	}		
+.index_border_jia
+	{
+		position:absolute;top:0;right:0;width:30px;height:30px;cursor:pointer;border:none;background:none;padding:0;
+	}
+.index_border_jia:after
+	{
+		position:absolute;top:5px;right:2px;width:20px;height:20px;background-image: url("../images/zutai/jia.png");background-position:0px;background-size:20px 20px;background-repeat:no-repeat;content: '';
+	}		
+.index_border_jian
+	{
+		position:absolute;top:0;left:0;width:30px;height:30px;cursor:pointer;border:none;background:none;padding:0;
+	}
+.index_border_jian:after
+	{
+		position:absolute;top:5px;left:2px;width:20px;height:20px;background-image: url("../images/zutai/jian.png");background-position:0px;background-size:20px 20px;background-repeat:no-repeat;content: '';
+	}	
+#index_border
+	{
+		position:absolute;top:0;left:0px;width:36px;height:28px;line-height:28px;border:1px solid #ddd;text-align:center
+	}		
+.index_border_select
+	{
+		position:absolute;top:5px;right:0;width:100px;height:30px;background-color:#fff;text-align:center;font-size:14px;border:1px solid rgba(0, 0, 0, 0.2);
+	}	
+.index_dropdown_border
+	{
+		position:absolute;top:1px;left:1px;padding:0 !important;border-radius:0px !important;height:26px !important;width:60px !important;text-align:center;font-size:14px;border:none;line-height:26px !important;
+	}		
+.index_file
+	{
+		position:absolute;top:100px;left:50px;width:250px;height:200px;background-color:#fff;z-index:1001;box-shadow:0px 0px 8px 1px rgba(0, 0, 0, .1);border:1px solid #999a99;display:none;border-radius:6px;
+	}
+.index_file_title
+	{
+		padding:0 10px 0 24px;width:220px;margin:0 auto;height:50px;line-height:50px;text-align:left;font-size:16px;background-color:#fff;border-bottom:1px solid #999a99;cursor:move;
+	}
+.index_file_title:after 
+	{
+		position: absolute;
+		top: 12px;
+		right: 15px;
+		width:26px;
+		height:26px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}	
+.new-contentarea 
+	{
+		position:absolute;top:60px;left:84px;width:80px;height:80px;text-align:center;cursor:pointer;
+	}
+.new-contentarea label 
+	{
+		width:80px;height:80px;margin:0;display:block;
+	}
+.new-contentarea input[type=file] 
+	{
+		width:80px;height:80px;background:#333;position:absolute;right:0;top:0;
+		opacity:0;filter:alpha(opacity=0);z-index:2;cursor:pointer;
+	}
+a.upload-img
+	{
+		width:80px;height:80px;display:inline-block;background-image: url("../images/zutai/shangchuan.png");background-position:0px;background-size:80px 80px;background-repeat:no-repeat;text-decoration:none;
+	}
+a.upload-img:hover
+	{
+		background-color: #ec7e70;
+	}
+
+	/* 图表样式 */
+.iframe
+	{
+		position:absolute;width:100%;height:100%;top:0;left:0;display:none;
+	}	
+.avast_iframe
+	{
+		z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;
+	}
+.avast_iframe_z
+	{
+		z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;
+	}	
+.mCSB_21_scrollbar
+	{
+		right:-6px;
+	}
+.mCSB_22_scrollbar
+	{
+		right:-6px;
+	}	
+.index_tabs_echarts
+	{
+		position:absolute;top:0;left:68px;right:0;bottom:0;width:182px;height:100%
+	}
+	/* 编辑区外围区域控制 */
+.body
+	{
+		position:relative;width:100%;height:100%;overflow:auto;padding:0;margin:0;
+	}	
+.index
+	{
+		position:relative;width:100%;height:100%;overflow:auto;padding:0;margin:0;	
+	}
+	/* 头部编辑区功能 */
+.index_top_chengzu
+	{
+		position:absolute;top:100px;left:50%;width:300px;height:150px;margin-left:-150px;background-color:#fff;z-index:1002;border:1px solid #c6c6c6;border-radius:4px;box-shadow:0px 0px 8px 1px rgba(0, 0, 0, .2);display:none;
+	}	
+.index_top_chengzu_title
+	{
+		padding:0 10px;height:40px;line-height:40px;text-align:left;font-size:14px;background-color:#f8f8f8;border-bottom:1px solid #ea8010;cursor:move
+	}
+.index_top_chengzu_title_b
+	{
+		font-size:18px;color:#ea8010;
+	}	
+.index_top_chengzu_title:after 
+	{
+		position: absolute;
+		top: 9px;
+		right: 14px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}	
+	/* 传感器 */ 
+.avast_chuanganqi/* 修改 */
+	{
+		position:absolute;top:420px;left:10px;width:250px;height:auto !important;background-color:#fff;z-index:1001;border:1px solid #999a99;border-radius:10px;display:none;
+	}
+.avast_chuanganqi_title
+	{
+		padding:0 14px 0 24px;height:42px;line-height:42px;text-align:left;font-size:16px;background-color:#fff;border-bottom:1px solid #e5e5e5;cursor:move;border-radius:10px;
+	}	
+.avast_chuanganqi_title:after 
+	{
+		position: absolute;
+		top:10px;
+		right:15px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}		
+.avast_chuanganqi_seleat
+	{
+		position:relative;width:202px;height:auto;margin:0 auto;
+	}
+.avast_chuanganqi_txt
+	{
+		position:relative;width:202px;height:40px;line-height:40px;font-size:14px;text-align:left;
+	}
+.avast_chuanganqi_select
+	{
+		position:absolute;top:5px;right:0;width:120px;height:30px;line-height:30px;background-color:#fff;text-align:center;font-size:14px;border:1px solid #999a99;cursor:pointer;border-radius:6px;
+	}
+.avast_chuanganqi_input 
+	{
+		position:absolute;top:5px;right:0;width:120px;height:30px;line-height:30px;background-color:#fff;text-align:center;font-size:14px;border:1px solid #999a99;border-radius:6px;
+	}		
+.avast_chuanganqi_select:after 
+	{
+		position: absolute;
+		top:10px;
+		right:6px;
+		width:8px;
+		height:8px;
+		background-image: url("../images/zutai/select.png");
+		background-position:0px;
+		background-size: 8px;
+		background-repeat:no-repeat;
+		content: '';
+	}
+.click_xuanze_shebei
+	{
+		position:absolute;top:29px;left:-1px;width:120px;height:300px;overflow:auto;border: 1px solid #999a99;z-index:9999;background-color:#fff;display:none;border-radius:6px;
+	}
+.click_li_shebei
+	{
+		width:100px;margin:0 auto;height:35px;line-height:35px;text-align:center;font-size:14px;position:relative;border-bottom:1px solid #ddd;
+	}
+.click_span_shebei
+	{
+		position:absolute;top:11px;right:0;width:14px;height:14px;border:1px solid #999a99;
+	}
+.click_yes_shebei:after 
+	{
+		position:absolute;top:2px;left:1px;width:12px;height:12px;background-image:url("../images/zutai/duihao.png");background-position:0px;background-size:12px;background-repeat:no-repeat;content: '';
+	}
+.choice_shebei
+	{
+		position:relative;width:202px;height:auto;line-height:50px;font-size:14px;text-align:left;
+	}
+.add_choice_shebei
+	{
+		position:relative;width:120px;height:auto;float:right;
+	}
+.li_choice_shebei
+	{
+		position:relative;height:30px;float:left;line-height:30px;padding:0 10px;border:1px solid #eb4f38;margin:5px;
+	}
+.dele_choice_shebei
+	{
+		cursor:pointer;position:absolute;top:-1px;right:-2px;width:14px;height:14px;background-image:url("../images/zutai/tabs_equipment_dialogue1_off.png");background-position:0px;background-size:12px;background-repeat:no-repeat;
+	}
+.dele_choice_chuanganqi
+	{
+		cursor:pointer;position:absolute;top:-1px;right:-2px;width:14px;height:14px;background-image:url("../images/zutai/tabs_equipment_dialogue1_off.png");background-position:0px;background-size:12px;background-repeat:no-repeat;
+	}	
+	/* 传感器 */
+.click_xuanze_chuanganqi
+	{
+		position:absolute;top:29px;left:0px;width:100%;height:350px;padding:0 4px 0 0;border: 1px solid #999a99;z-index:9999;background-color:#fff;display:none;border-radius:6px;overflow:auto;
+	}
+.click_li_chuanganqi
+	{
+		padding:0 20px 0 0;border:none;background-color:#fff;width:100%;height:35px;line-height:35px;text-align:center;font-size:14px;position:relative;border-bottom:1px solid #ddd;
+	}
+.click_span_chuanganqi
+	{
+		position:absolute;top:11px;right:0;width:14px;height:14px;border:1px solid #999a99;
+	}
+.click_yes_chuanganqi:after 
+	{
+		position:absolute;top:2px;left:1px;width:12px;height:12px;background-image:url("../images/zutai/duihao.png");background-position:0px;background-size:12px;background-repeat:no-repeat;content: '';
+	}
+.choice_chuanganqi
+	{
+		position:relative;width:202px;height:auto;line-height:50px;font-size:14px;text-align:left;overflow:hidden;
+	}
+.add_choice_chuanganqi
+	{
+		position:relative;width:120px;height:auto;float:right;
+	}
+.li_choice_chuanganqi
+	{
+		position:relative;height:30px;float:left;line-height:30px;padding:0 5px;border:1px solid #eb4f38;margin:5px;
+	}
+.index_choice_sc
+	{
+		display:none;  
+	}
+	/* 新增加元素 */
+.avast_top_icon_a_15
+	{
+		position:relative;float:left;width:60px;height:36px;text-align:right;cursor:pointer;
+	}
+.avast_top_icon_a_15:after 
+	{
+		content:'';position:absolute;top:5px;left:0px;width:24px;height:24px;background-position:0px;background-size:24px;background-repeat:no-repeat;background-image:url("../images/zutai/fabu.png");
+	}
+	/*发布应用*/
+.fabu_index
+	{
+		position:absolute;top:0;left:0;right:0;bottom:0;z-index:9999;background-color:rgba(0,0,0,.4);display:none;
+	}
+.fabu_index_cn
+	{
+		position:absolute;top:50%;left:50%;margin-top:-150px;margin-left:-225px;width:450px;height:220px;background-color:#fff;border:1px solid #b5b5b5;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.4);
+	}	
+.fabu_index_cn_title
+	{
+		position:absolute;top:0;left:25px;width:400px;height:140px;line-height:140px;font-size:16px;text-align:center;border-bottom:1px solid #b5b5b5;
+	}
+.fabu_index_cn_anniu
+	{
+		position:absolute;top:140px;left:25px;width:400px;height:80px;
+	}	
+.fabu_index_cn_anniu_quxiao
+	{
+		position:absolute;top:15px;left:105px;width:80px;height:40px;line-height:40px;text-align:center;border:1px solid rgba(0,0,0, .8);border-radius:5px;cursor:pointer;
+	}
+.fabu_index_cn_anniu_queding
+	{
+		position:absolute;top:15px;left:220px;width:80px;height:40px;line-height:40px;text-align:center;background-color:rgba(0,0,0, .8);border-radius:5px;color:#fff;cursor:pointer;
+	}
+	/* 发布编辑区 */
+	/* 发布编辑区 */
+.fabu_body_con
+	{
+		position:relative;width:220px;height:auto;margin:0 auto;
+	}
+.fabu_body_txt
+	{
+		position:relative;width:220px;
+	}
+.fabu_body_tubiao
+	{
+		position:relative;width:220px;height:170px;padding:30px 0 10px 0;
+	}	
+.fabu-contentarea 
+	{
+		position:relative;width:60px;height:60px;cursor:pointer;margin:0 auto;
+	}
+.fabu-contentarea input[type=file] 
+	{
+		width:60px;height:60px;position:absolute;right:0;top:0;
+		opacity:0;filter:alpha(opacity=0);z-index:2;cursor:pointer;
+	}
+.fabu-contentarea-img
+	{
+		position:relative;width:60px;height:60px;
+	}
+.fabu-contentarea-img img
+	{
+		width:60px;height:60px;
+	}
+.fabu-contentarea-text
+	{
+		width:220px;font-size:14px;text-align:center;color:#888;height:70px;line-height:25px;padding:10px 0;
+	}
+.fabu-contentarea-text
+	{
+		width:220px;font-size:14px;text-align:center;color:#888;height:70px;line-height:25px;padding:10px 0;
+	}
+.fabu-contentarea-yingyong
+	{
+		position:relative;width:220px;height:72px;
+	}
+.fabu_body_input
+	{
+		position:relative;width:100%;height:36px;text-align:left;font-size:16px;
+	}
+.fabu_input
+	{
+		position:absolute;top:0px;right:0px;width:140px;height:36px;line-height:36px;padding:0px 10px;margin:0;font-size:16px;border:1px solid #ddd;border-radius:6px;
+	}
+.fubu_checkbox
+	{
+		position:absolute;top:0;left:82px;width:144px;height:36px;
+	}
+.fubu_checkbox_div
+	{
+		float:left;width:60px;height:36px;line-height:36px;font-size:14px;cursor:pointer
+	}
+.fubu_checkbox_span
+	{
+		position:relative;float:left;width:18px;height:18px;border:1px solid #eb4f38;margin:9px 6px 0px 0px;border-radius:2px;
+	}
+.fubu_checkbox_span_on:after 
+	{
+		position:absolute;top:2px;left:1px;width:16px;height:16px;background-image:url("../images/zutai/duihao.png");background-position:0px;background-size:15px;background-repeat:no-repeat;content:'';
+	}
+.fabu_body_txt-padding
+	{
+		padding:10px 0;
+	}
+.fabu_body_input_padding
+	{
+		margin-top:10px;
+	}
+	/* 鼠标右键功能 */
+.right_click
+	{
+		position:absolute;width:100px;padding:10px 0px;background-color:#fff;border:1px solid #c6c6c6;
+		border-radius:4px;	z-index:9999;
+	}
+.right_click ul
+	{
+		padding:0;margin:0;
+	}
+.right_click ul li
+	{
+		width:100px;height:30px;line-height:30px;margin:0 auto;text-align:center;font-size:14px;
+	}
+.right_click ul li:hover
+	{
+		background-color:#ddd;cursor:pointer;
+	}
+	/* 模拟ctrl+c chrl+v 功能 */
+.ctrl_c
+	{
+		position:absolute;top:40px;left:50%;margin-left:-100px;width:200px;height:35px;line-height:35px;text-align:center;border:1px solid #c6c6c6;border-radius:4px;font-size:14px;color:#56abe4;
+	}
+.avast_sensor_KG img
+	{
+		width:100%;height:100%;
+	}	
+.tabs_echarts_avastKG, .tabs_echartss_avastZ, .tabs_echarts_IMG
+	{
+		cursor: move;
+	}
+  /* 增加功能 */
+.avast-position
+	{
+		position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;z-index:99;
+	} 
+ /* 自定义开关 */
+.avast-zidingyi-kaiguan
+	{
+		position:absolute;top:100px;left:200px;width:400px;height:140px;background-color:#fff;z-index:2001;border:1px solid #999a99;border-radius:10px;display:none;
+	}
+.avast-zidingyi-kaiguan-title
+	{
+		position:relative;width:380px;margin:0 auto;padding:0 10px;height:40px;line-height:40px;text-align:cneter;font-size:16px;border-bottom:1px solid #999a99;cursor:move;
+	}
+.avast-zidingyi-kaiguan-title:after 
+	{
+		position: absolute;
+		top:10px;
+		right:15px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}
+.avast-zidingyi-kaiguan-centent
+	{
+		position:relative;width:380px;height:100px;margin:0 auto;
+	}
+.zidingyi-kaiguan-on
+	{
+		position:relative;float:left;width:100px;height:50px;margin:20px 0 0 20px;line-height:50px;text-align:center;background-color:#fff;border-radius:5px;border:1px solid #ccc;box-shadow: 0 0 10px #ccc;cursor:pointer;
+	}
+.zutaiku_xuanze
+	{
+		position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.4);z-index:9999;display:none;
+	}
+.zutaiku_xuanze_con
+	{
+		position:absolute;top:100px;left:50%;margin-left:-500px;width:1000px;height:700px;background-color:#fff;border-radius:10px;box-shadow: 0 0 3px #ddd;
+	}
+.zutaiku_xuanze_title
+	{
+		position:relative;width:980px;margin:0 auto;padding:0 10px;height:50px;line-height:50px;text-align:cneter;font-size:16px;border-bottom:1px solid #ccc;
+	}
+.zutaiku_xuanze_cont
+	{
+		position:relative;width:980px;height:630px;margin: 10px auto 10px auto;
+	}
+.zutaiku_xuanze_img
+	{
+		position:relative;width:750px;height:630px;float:left;border-right:1px solid #ccc;overflow-x:hidden;overflow-y:auto;
+	}
+.avast_tuxingkaiguan
+	{
+		position:relative;float:left;width:100px;height:auto;text-align:center;margin:0px 12px 15px 12px;cursor:move
+	}
+.avast_tuxingkaiguan img
+	{
+		max-width:100px;height:60px;
+	}
+.zutaiku_xuanze_bianji
+	{
+		position:relative;width:220px;height:630px;float:right;
+	}
+.zutaiku_xuanze_bianji_kaiguan
+	{
+		position:relative;width:220px;height:125px;
+	}
+.zutaiku_xuanze_bianji_title
+	{
+		margin:0 auto;width:200px;height:35px;line-height:35px;text-align:center;font-size:16px;border-bottom:1px solid #ccc;
+	}
+.zutaiku_xuanze_bianji_one
+	{
+		position:relative;width:200px;height:80px;margin:10px auto auto auto;border:1px dashed #ccc;text-align:center;padding:5px;
+	}
+.zutaiku_xuanze_bianji_one img
+	{
+		height:70px;
+	}
+.avast_switch_yulan
+	{
+		position:relative;margin:20px auto auto auto;width:200px;height:120px;
+	}
+.avast_switch_yulan_title
+	{
+		position:relative;width:200px;height:30px;line-height:30px;font-size:14px;text-align:center;background-color:#56abe4;border-radius:10px;color:#fff;cursor:pointer;
+	}
+.avast_switch_yulan_con
+	{
+		position:relative;width:200px;height:80px;margin-top:10px;text-align:center;
+	}
+.avast_switch_yulan_con img
+	{
+		height:80px;cursor:pointer;
+	}
+.zutaiku_tijiao
+	{
+		position:relative;width:200px;height:80px;margin:10px auto auto auto;border-top:1px solid #ccc;
+	}
+.zutaiku_tijiao_quxiao
+	{
+		position:relative;width:180px;height:40px;line-height:40px;margin:30px auto 30px auto;background-color:#eb4f38;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+.zutaiku_tijiao_tijiao
+	{
+		position:relative;width:180px;height:40px;line-height:40px;margin:0 auto;background-color:#56abe4;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+	/* 自定义上传 */
+.zidingyi_xuanze
+	{
+		position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.4);z-index:9999;display:none;
+	}
+.zidingyi_xuanze_on
+	{
+		position:absolute;top:100px;left:50%;margin-left:-250px;width:500px;height:500px;background-color:#fff;border-radius:10px;box-shadow: 0 0 3px #ddd;
+	}
+.zidingyi_xuanze_title
+	{
+		position:relative;width:480px;margin:0 auto;padding:0 10px;height:50px;line-height:50px;text-align:cneter;font-size:16px;border-bottom:1px solid #ccc;
+	}
+.zidingyi_xuanze_one
+	{
+		position:relative;width:480px;margin:20px auto;height:410px;overflow:hidden;
+	}
+.zidingyi_xuanze_one_left
+	{
+		position:relative;float:left;width:270px;height:410px;overflow:hidden;border-right:1px solid #ccc;
+	}
+.zidingyi_xuanze_one_left_one
+	{
+		position:relative;margin:15px auto;width:230px;height:120px;line-height:120px;text-align:left;font-size:16px;
+	}
+.zidingyi_xuanze_one_left_on_img
+	{
+		position:absolute;top:15px;right:50px;width:100px;height:100px;text-align:center;cursor:pointer;
+	}
+.zidingyi_xuanze_one_left_on_img input[type=file] 
+	{
+		width:100px;height:100px;position:absolute;right:0;top:0;
+		opacity:0;filter:alpha(opacity=0);z-index:2;cursor:pointer;
+	}
+.zidignyi_upload-img
+	{
+		float:left;width:100px;height:100px;text-decoration:none;cursor:pointer;border:1px dashed #ccc;line-height:100px;
+	}
+.zidignyi_upload-img img
+	{
+		max-width:80px;height:80px;
+	}	
+.zidingyi_xuanze_one_right
+	{
+		position:relative;float:right;width:190px;height:410px;overflow:hidden;
+	}
+.zidingyi_yulan
+	{
+		position:relative;margin:0 auto;width:170px;height:30px;line-height:30px;font-size:14px;text-align:center;background-color:#56abe4;border-radius:10px;color:#fff;cursor:pointer;
+	}
+.zidingyi_switch_yulan
+	{
+		margin:0 auto;position:relative;width:170px;height:80px;margin-top:10px;text-align:center;
+	}
+.zidingyi_switch_yulan img
+	{
+		max-width:170px;height:80px;cursor:pointer;
+	}	
+.zidingyi_tijiao
+	{
+		position:relative;width:160px;height:80px;margin:10px auto auto auto;border-top:1px solid #ccc;
+	}
+.zidingyi_tijiao_quxiao
+	{
+		position:relative;height:40px;line-height:40px;margin:30px auto 30px auto;background-color:#eb4f38;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+.zidingyi_tijiao_tijiao
+	{
+		position:relative;height:40px;line-height:40px;margin:0 auto;background-color:#56abe4;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+	/* 图形库自定义 */
+.tuxingku_xuanze
+	{
+		position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.4);z-index:9999;display:none;
+	}
+.tuxingku_xuanze_on
+	{
+		position:absolute;top:100px;left:50%;margin-left:-250px;width:500px;height:700px;background-color:#fff;border-radius:10px;box-shadow: 0 0 3px #ddd;
+	}
+.tuxingku_xuanze_title
+	{
+		position:relative;width:480px;margin:0 auto;padding:0 10px;height:50px;line-height:50px;text-align:cneter;font-size:16px;border-bottom:1px solid #ccc;
+	}
+.tuxingku_xuanze_cont
+	{
+		position:relative;width:480px;height:630px;margin: 10px auto 10px auto;
+	}
+.tuxingku_svg_left
+	{
+		position:relative;float:left;width:270px;height:630px;overflow:hidden;border-right:1px solid #ccc;
+	}	
+.tuxingku_svg
+	{
+		width:50px;height:50px;line-height:50px;cursor:move;margin:25px 0 0 50px;float:left;position:relative;
+	}
+.tuxingku_svg_right
+	{
+		position:relative;float:right;width:190px;height:630px;overflow:hidden;
+	}	
+.tuxingku_svg_kaiguan
+	{
+		position:relative;width:190px;height:125px;
+	}
+.tuxingku_svg_kaiguan_title 
+	{
+		margin:0 auto;width:180px;height:35px;line-height:35px;text-align:center;font-size:16px;border-bottom:1px solid #ccc;
+	}
+.tuxingku_svg_kaiguan_one
+	{
+		position:relative;width:80px;height:80px;margin:10px auto auto auto;border:1px dashed #ccc;text-align:center;padding:5px;
+	}
+.tuxingku_svg_yulan
+	{
+		position:relative;margin:10px auto; width:170px; height:30px;line-height:30px;font-size:14px;text-align:center;background-color:#56abe4;border-radius:10px;color:#fff;cursor:pointer;
+	}
+.tuxingku_svg_switch_yulan
+	{
+		margin:0 auto;position:relative;width:80px;height:80px;margin-top:10px;
+	}
+.tuxingku_svg_switch_yulan_on, .tuxingku_svg_switch_yulan_off
+	{
+		width:80px;height:80px;cursor:pointer;
+	}
+.tuxingku_svg_tijiao
+	{
+		position:relative;width:160px;height:80px;margin:10px auto auto auto;border-top:1px solid #ccc;
+	}
+.tuxingku_svg_tijiao_quxiao
+	{
+		position:relative;height:40px;line-height:40px;margin:30px auto 30px auto;background-color:#eb4f38;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+.tuxingku_svg_tijiao_tijiao
+	{
+		position:relative;height:40px;line-height:40px;margin:0 auto;background-color:#56abe4;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+	/* 图表背景是否透明 */
+.tubiao_transparent_1
+	{
+		position:relative;width:100%;height:45px;line-height:45px;text-align:left;font-size:14px;
+	}
+.tubiao_transparent_2
+	{
+		position:absolute;top:10px;left:120px;width:26px;height:26px;border: 1px solid #ccc;cursor: pointer;
+	}
+.tubiao_transparent_3:after
+	{ 
+		position:absolute;top:4px;left:3px;width:20px;height:20px;background-image:url("../images/zutai/duihao.png");background-position:0px;background-size:20px;background-repeat:no-repeat;content:'';
+	}
+	/* 设备通信 */
+.tabs_equipment
+	{
+		cursor:move;width:166px;height:166px;margin:8px 0 0 6px;box-shadow:0 0 10px #ccc;background-color:#fff;z-index:9999;
+	}
+.tabs_equipment_ino
+	{
+		cursor:move;
+	}	
+.tabs_equipment_ino img
+	{
+		width:100%;height:100%;
+	}
+	
+	
+.tabs_equipment_dialogue
+	{
+		position:absolute;top:50%;left:50%;width:650px;height:500px;margin-top:-250px;margin-left:-325px;border:1px solid #ddd;border-radius:10px;background-color:#fff;display:none;z-index:9999;
+	}
+.tabs_equipment_dialogue_left
+	{
+		position:absolute;top:0;left:0px;width:150px;height:500px;border-right:1px solid #ddd;
+	}
+.tabs_equipment_dialogue_left ul
+	{
+		margin:0 auto;padding:0;width:136px;
+	}
+.tabs_equipment_dialogue_left ul li
+	{
+		width:136px;height:40px;line-height:40px;text-align:center;background-color:white;border-color:#bbbbbb;border-width:1px;border-style:solid;border-radius:6px;margin-top:3px;overflow:hidden;cursor:pointer;
+	}	
+.dialogue_left_li_on
+	{
+		    background-color:#ffa726 !important;border-color:#fb8c00 !important;
+	}
+.tabs_equipment_dialogue_right
+	{
+		position:absolute;top:0;right:0;width:500px;height:500px;
+	}
+.dialogue_right_con
+	{
+		position:absolute;top:0;left:0;width:500px;height:375px;border-bottom:1px solid #ddd;
+	}
+.dialogue_right_con_left
+	{
+		position:relative;width:500px;line-height:45px;font-size:14px;margin-top:15px;
+	}
+.dialogue_right_con_left_span
+	{
+		position:relative;float:left;width:150px;min-height:45px;background-color:#9ccc65;border-radius:8px;text-align:center;color:#eb4f38;margin-left:20px;font-size:16px;
+	}
+.dialogue_right_con_left_s
+	{
+		float:left;margin-left:10px;
+	}
+	
+.dialogue_right_con_right_span
+	{
+		position:relative;float:right;width:150px;min-height:45px;background-color:#29b6f6;border-radius:8px;text-align:center;color:#fff;margin-right:20px;font-size:16px;
+	}
+.dialogue_right_con_right_s
+	{
+		float:right;margin-right:30px;
+	}
+.dialogue_right_con_right_span_no:after
+	{ 
+		position:absolute;top:10px;left:-28px;width:24px;height:24px;background-image:url("../images/zutai/cuowu.png");background-position:0px;background-size:24px;background-repeat:no-repeat;content:'';
+	}
+.dialogue_right_con_bottom
+	{
+		position:absolute;bottom:0;right:0;width:500px;height:125px;
+	}
+.dialogue_textarea
+	{
+		position:absolute;top:0;left:2px;width:496px;height:80px;
+	}
+.dialogue_textarea textarea
+	{
+		width:496px;height:80px;border:none;text-indent:0;box-sizing:border-box;overflow-x:hidden;resize:none;
+	}		
+.dialogue_right_con_bottom_anniu
+	{
+		position:absolute;bottom:0;left:0;width:500px;height:45px;
+	}
+.dialogue_quxiao
+	{
+		position:absolute;top:0px;right:120px;width:80px;height:38px;line-height:38px;border:1px solid #ffa726;background-color:#fff;border-radius:8px;color:#333;font-size:14px;
+	}
+.dialogue_tijiao
+	{
+		position:absolute;top:0px;right:20px;width:80px;height:38px;line-height:38px;border:none;background-color:#ffa726;border-radius:8px;color:#fff;font-size:14px;
+	}
+/* 兼容手机版数据下发  
+@media screen and (max-width: 800px)
+	{
+		.tabs_equipment_dialogue
+		{
+			position:absolute;top:2%;left:2%;bottom:2%;width:96%;border:1px solid #ddd;border-radius:10px;background-color:#fff;display:none;z-index:9999;overflow:hidden;margin:0;
+		}
+		.tabs_equipment_dialogue_left
+		{
+			position:absolute;top:0;left:0px;bottom:0;width:20%;border-right:1px solid #ddd;overflow:auto;
+		}
+		.tabs_equipment_dialogue_left ul
+		{
+			position:relative;margin:0 auto;padding:0;width:94%;
+		}
+		.tabs_equipment_dialogue_left ul li
+		{
+			position:relative;width:100%;height:40px;line-height:40px;text-align:center;background-color:white;border-color:#bbbbbb;border-width:1px;border-style:solid;border-radius:6px;margin-top:3px;overflow:hidden;cursor:pointer;
+		}
+		.dialogue_left_li_on
+		{
+			    background-color:#ffa726 !important;border-color:#fb8c00 !important;
+		}
+		.tabs_equipment_dialogue_right
+		{
+			position:absolute;top:0;right:0;bottom:0;width:80%;height:100%;overflow:hidden;
+		}
+		.dialogue_right_con
+		{
+			position:absolute;top:0;left:0;width:100%;height:80%;border-bottom:1px solid #ddd;z-index:99;
+		}
+		.dialogue_right_con_left
+		{
+			position:relative;width:96%;line-height:30px;font-size:12px;margin:5px auto;
+		}
+		.dialogue_right_con_left_span
+		{
+			position:relative;float:left;width:45%;min-height:45px;background-color:#9ccc65;border-radius:8px;text-align:center;color:#eb4f38;margin-left:0;font-size:12px;
+		}
+		.dialogue_right_con_left_s
+		{
+    		margin-left:0;
+		}	
+		.dialogue_right_con_right_span
+		{
+			position:relative;float:right;width:45%;min-height:45px;background-color:#29b6f6;border-radius:8px;text-align:center;color:#fff;margin-right:0px;font-size:12px;
+		}
+		.dialogue_right_con_right_s
+		{
+			float:right;margin-right:0;
+		}
+		.dialogue_right_con_bottom
+		{
+			position:absolute;bottom:0;left:0;width:100%;height:20%;
+		}
+		.dialogue_textarea
+		{
+			position:absolute;top:0;left:0;width:100%;height:60%;
+		}
+		.dialogue_textarea textarea
+		{
+			width:100%;height:100%;border:none;text-indent:0;box-sizing:border-box;overflow-x:hidden;resize:none;
+		}
+		.dialogue_right_con_bottom_anniu
+		{
+			position:absolute;bottom:0;left:0;width:100%;height:40%;
+		}
+		.dialogue_quxiao
+		{
+			position:absolute;top:0;right:120px;width:80px;height:30px;line-height:30px;border:1px solid #ffa726;background-color:#fff;border-radius:8px;color:#333;font-size:14px;
+		}
+		.dialogue_tijiao
+		{
+			position:absolute;top:0;right:20px;width:80px;height:30px;line-height:30px;border:none;background-color:#ffa726;border-radius:8px;color:#fff;font-size:14px;
+		}		
+	}		
+	*/	
+	/* 加载动画 */
+.avast_logding
+	{
+		position:absolute;top:0;left:0;bottom:0;right:0;background-color:rgba(255,255,255,.8);z-index:9999;display:none;
+	}
+.avast_logding_logo
+	{
+		position:absolute;top:50%;left:50%;width:24px;height:24px;margin-left:-12px;margin-top:-12px;transform-origin:center;animation:spin 800ms infinite linear reverse;background-image:url("../images/zutai/logding.png");background-size:24px 24px;
+	}
+@keyframes spin 
+	{
+		0%{ transform:rotate(0deg); }
+
+		100%{ transform:rotate(-360deg); }
+	}
+.tabs_equipment_on
+	{
+		width:100%;height:100%;display:none;
+	}
+.tabs_equipment_on img
+	{
+		width:100%;height:100%;
+	}	
+	/*历史记录*/
+.tabs_equipment_dialogue1
+	{
+		position:absolute;top:10%;left:30%;width:950px;min-height:400px;height:auto !important;border:1px solid #ddd;border-radius:10px;background-color:#fff;z-index:9999;display:none;
+	}
+.tabs_equipment_dialogue1_off
+	{
+		position:absolute;cursor:pointer;position:absolute;top:-30px;right:-15px;width:30px;height:30px;background-image:url("../images/zutai/tabs_equipment_dialogue1_off.png");background-size:30px 30px;background-repeat:no-repeat;
+	}	
+.tabs_equipment_dialogue_left1
+	{
+		position:relative;float:left;width:150px;height:auto;max-height:660px;
+	}
+.tabs_equipment_dialogue_left1 ul
+	{
+		margin:0 auto;padding:0;width:136px;
+	}
+.tabs_equipment_dialogue_left1 ul li
+	{
+		width:136px;height:40px;line-height:40px;text-align:center;background-color:white;border-color:#bbbbbb;border-width:1px;border-style:solid;border-radius:6px;margin-top:3px;overflow:hidden;cursor:pointer;
+	}
+.tabs_equipment_dialogue_right1
+	{
+		position:relative;float:left;width:790px;height:auto;border-left:1px solid #ddd;
+	}	
+.tabs_equipment_dialogue_right1_title
+	{
+		position:relative;margin:0 10px;height:40px;line-height:40px;text-align:center;font-size:16px;border-bottom:1px solid #999a99;cursor:move
+	}
+.tabs_equipment_dialogue_right1:after 
+	{
+		position: absolute;
+		top:10px;
+		right:15px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}	
+.dialogue_right_con1
+	{
+		position:relative;float:left;width:790px;height:auto;
+	}	
+   /* 对齐方式 */
+.avast_alignment
+	{
+		position:absolute;top:60px;left:30%;width:400px;height:160px;background-color:#FFF;border-radius:6px;border:1px solid #eb4f38;z-index:9999;display:none;
+	}   
+.avast_alignment_title
+	{
+		position:relative;margin:0 10px;height:40px;line-height:40px;text-align:center;font-size:16px;border-bottom:1px solid #999a99;cursor:move
+	}
+.avast_alignment:after 
+	{
+		position: absolute;
+		top:10px;
+		right:15px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}
+.avast_alignment_html
+	{
+		position:relative;margin:0 auto;width:380px;height:100px;
+	}
+.avast_alignment_body
+	{
+		position:relative;float:left;height:35px;line-height:35px;font-size:14px;
+		border:1px solid #e5e5e5;margin-left:-1px;margin-top:15px;padding:0px 15px;cursor:pointer;
+	}
+.index_alignment
+	{
+		border:1px solid #eb4f38 !important;
+	}
+	/* 成组 */
+.avast_Group
+	{
+		position:absolute;top:60px;left:6%;width:220px;height:150px;background-color:#FFF;border-radius:6px;border:1px solid #eb4f38;z-index:9999;display:none;
+	} 
+.avast_Group_title
+	{
+		position:relative;margin:0 10px;height:40px;line-height:40px;text-align:center;font-size:16px;border-bottom:1px solid #999a99;cursor:move
+	}
+.avast_Group:after 
+	{
+		position: absolute;
+		top:10px;
+		right:15px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}
+.avast_Group_html
+	{
+		position:relative;margin:0 auto;width:200px;height:110px;
+	}
+.avast_Group_html_on
+	{
+		position:relative;width:140px;height:40px;line-height:40px;margin:30px auto 0px auto;background-color:#56abe4;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+.index_Group_off
+	{
+		position:absolute;top:0;left:0;width:100%;height:100%;z-index:9999;cursor:move;
+	}
+.click_Group
+	{
+		border:2px dashed #5bc0de !important;
+	}
+.existence_Group
+	{
+		border:1px solid #5bc0de !important;
+	}	
+	/*编辑成组*/
+.edit_Group
+	{
+		position:absolute;top:60px;left:6%;width:220px;height:170px;background-color:#FFF;border-radius:6px;border:1px solid #eb4f38;z-index:9999;display:none;
+	}
+.edit_Group_title
+	{
+		position:relative;margin:0 10px;height:40px;line-height:40px;text-align:center;font-size:16px;border-bottom:1px solid #999a99;cursor:move
+	}
+.edit_Group:after 
+	{
+		position: absolute;
+		top:10px;
+		right:15px;
+		width:20px;
+		height:20px;
+		background-image: url("../images/zutai/tuodong.png");
+		background-position: 0px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		content: '';
+	}
+.edit_Group_html
+	{
+		position:relative;margin:0 auto;width:200px;height:130px;
+	}
+.edit_Group_html_on
+	{
+		position:relative;width:140px;height:40px;line-height:40px;margin:15px auto 0px auto;background-color:#56abe4;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+.edit_Group_html_off
+	{
+		position:relative;width:140px;height:40px;line-height:40px;margin:15px auto 0px auto;background-color:#eb4f38;border-radius:10px;box-shadow:0 0 5px rgba(0,0,0,.3);text-align:center;color:#fff;font-size:16px;cursor:pointer;
+	}
+.delete_edit_Group
+	{
+		border:2px dashed #5bc0de !important;
+	}
+.edit_Group_span
+	{
+		position:absolute;top:5px;right:5px;width:20px;height:20px;border:1px solid #eb4f38;z-index:9999;
+	}
+.edit_Group_span_on:after
+	{
+		position:absolute;
+		top:2px;
+		left:2px;
+		width:16px;
+		height:16px;
+		background-image: url("../images/zutai/duihao.png");
+		background-position:0px;
+		background-size:16px;
+		background-repeat:no-repeat;
+		content: '';
+	}
+.html_Group
+	{
+		overflow:hidden;
+	}	
+	/*  手机版 */
+.Mobile_phone
+	{
+		position:absolute;top:95px;left:50%;margin-left:-175px;width:350px;height:40px;background-color:rgba(255,255,255,1);z-index:999;border:1px solid #ddd;box-shadow:0 1px 6px #ccc;border-radius:5px;display:none;
+	}
+.Cell_phone_model
+	{
+		position:relative;float:left;width:140px;height:40px;font-size:12px;line-height:40px;text-align:center;margin:0;cursor:pointer;
+	}	
+.Cell_phone
+	{
+		position:relative;float:left;width:50px;height:40px;font-size:12px;line-height:40px;text-align:center;
+	}	
+.Cell_phone_o
+	{
+		position:relative;float:left;width:20px;height:40px;font-size:12px;line-height:40px;text-align:center;
+	}	
+@font-face{
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1477380080_603964.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1477380080_603964.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1477380080_603964.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1477380080_603964.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1477380080_603964.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont 
+	{
+	  font-family: "iconfont" !important;
+	  font-style: normal;
+	  -webkit-font-smoothing: antialiased;
+	  -webkit-text-stroke-width: .2px;
+	  -moz-osx-font-smoothing: grayscale;
+	}
+.Cell_phone_model_span
+	{
+		float:left;width:110px;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:right;
+	}	
+.icon-phone
+	{
+		float:left;width:30px;height:40px;line-height:42px;font-size:28px;
+	}	
+.icon-phone:before 
+	{
+	  content:"\e601";
+	}
+.Cross_screen
+	{
+		float:left;width:30px;height:40px;line-height:40px;font-size:22px;cursor:pointer;
+	}	
+.Cross_screen:before 
+	{
+	  content:"\e600";
+	}
+.Cell_phone_yidong
+	{
+		 position:relative;float:right;width:50px;height:40px;cursor:move;
+	}
+.Cell_phone_yidong:before 
+	{
+		position:absolute;top:10px;left:10px;width:20px;height:20px;background-image: url(../images/zutai/tuodong.png);background-position: 0px;background-size: 20px 20px;background-repeat: no-repeat;content: '';
+	}		
+.Choice_phone
+	{
+		position:absolute;top:40px;left:0px;width:auto;min-width:200px;height:auto;z-index:9999;background-color:#fff;border:1px solid #ddd;box-shadow:0 1px 2px #ddd;display:none;
+	}
+.Choice_phone ul
+	{
+		margin:0;padding:0;
+	}
+.Choice_phone ul li
+	{
+		height:30px;line-height:30px;
+	}
+.Choice_phone ul li:hover
+	{
+		background-color:#ecf0f1;
+	}
+.Choice_phone_span
+	{
+		position:relative;float:left;width:50px;height:30px;line-height:30px;text-align:center;font-size:18px;
+	}
+.Choice_phone_span_ico:before 
+	{
+	  content:"\e602";
+	}
+.Choice_phone_li
+	{
+		float:left;
+	}
+/* 悬浮球 */
+.avast_xuanfuqiu
+	{
+		cursor:pointer;position:absolute;top:20%;left:5px;width:62px;height:62px;z-index:9999;
+	}
+.avast_xuanfuqiu1
+	{
+		position:absolute;top:0;left:0;width:62px;height:62px;z-index:9999;background-color:rgba(0,0,0,0.65);box-shadow:0 0px 5px #28a3ef;border-radius:50%;
+	}	
+.avast_xuanfuqiu2
+	{
+		position:absolute;top:3px;left:3px;width:56px;height:56px;z-index:9999;border-radius:50%;border:2px solid rgba(67, 205, 203, 0.86);line-height:52px;text-align:center;font-size:14px;color:#fff;
+	}
+.avast_xuanfuqiu3
+	{
+		position:absolute;top:12px;right:-70px;width:70px;height:40px;z-index:8888;border-radius:20px;background-color:rgba(0,0,0,0.65);display:none;
+	}
+.avast_xuanfuqiu_up
+	{
+		position:absolute;top:2px;left:50%;width:16px;height:16px;margin-left:-8px;background-image:url("../images/zutai/up.png");background-size:16px 16px;background-repeat:no-repeat;
+	}
+.avast_xuanfuqiu_down
+	{
+		position:absolute;top:auto;bottom:2px;left:50%;width:16px;height:16px;margin-left:-8px;background-image:url("../images/zutai/down.png");background-size:16px 16px;background-repeat:no-repeat;
+	}
+.edge_left
+	{
+		cursor:pointer;position:absolute;top:0;left:0;width:10px;height:60px;border:4px solid rgba(0,0,0,.5);border-radius:2px;background-color:rgba(67, 205, 203, 0.76);z-index:9999;display:none;
+	}
+.edge_top
+	{
+		cursor:pointer;position:absolute;top:0;left:0;width:60px;height:10px;border:4px solid rgba(0,0,0,.5);border-radius:2px;background-color:rgba(67, 205, 203, 0.76);z-index:9999;display:none;
+	}
+.edge_right
+	{
+		cursor:pointer;position:absolute;top:0;right:0;width:10px;height:60px;border:4px solid rgba(0,0,0,.5);border-radius:2px;background-color:rgba(67, 205, 203, 0.76);z-index:9999;display:none;
+	}

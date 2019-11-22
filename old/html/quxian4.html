@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="http://www.tlink.io/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="http://www.tlink.io/js/chart/highcharts.js"></script>
+</head>
+
+<body>
+    <div id="container" style="width:100%;height:100%"></div>
+</body>
+<script>
+    $(function () {
+        cover();
+        $(window).resize(function () { //获得浏览器窗口变化 
+            cover();
+        });
+        Highcharts.setOptions({
+            global: {
+                useUTC: false
+            }
+        });
+        var chart;
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container',
+                type: 'spline',
+                backgroundColor: 'rgba(0,0,0,0)'
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: ''
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                type: 'datetime',
+                tickPixelInterval: 150
+            },
+            yAxis: {
+                title: {
+                    text: 'Snow depth (m)'
+                },
+                min: 0
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + '</b><br/>' + Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' + Highcharts.numberFormat(this.y, 2);
+                }
+            },
+
+            series: [{
+                name: 's1',
+                data: (function () { // generate an array of random data                             
+                    var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+                    for (i = -19; i <= 0; i++) {
+                        data.push({
+                            x: time + i * 1000,
+                            y: null
+                        });
+                    }
+                    return data;
+                })()
+            }, {
+                name: 's2',
+                data: (function () { // generate an array of random data                             
+                    var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+                    for (i = -19; i <= 0; i++) {
+                        data.push({
+                            x: time + i * 1000,
+                            y: null
+                        });
+                    }
+                    return data;
+                })()
+            }, {
+                name: 's3',
+                data: (function () { // generate an array of random data                             
+                    var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+                    for (i = -19; i <= 0; i++) {
+                        data.push({
+                            x: time + i * 1000,
+                            y: null
+                        });
+                    }
+                    return data;
+                })()
+            }]
+        });
+        var series = chart.series[0];
+        var series1 = chart.series[1];
+        var series2 = chart.series[2];
+        setInterval(function () {
+            var x = (new Date()).getTime(),
+                // current time         
+                y = Math.random();
+            y1 = Math.random();
+            y2 = Math.random();
+            series.addPoint([x, y + 1], true, true);
+            series1.addPoint([x, y1 + 1], true, true);
+            series2.addPoint([x, y2 + 1], true, true);
+        }, 5000);
+    });
+    function cover() {
+        var win_height = $(window).height();
+        $("#container").css({ "height": win_height + "px" });
+
+    };			                             				
+</script>
+
+</html>

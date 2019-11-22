@@ -1,0 +1,242 @@
+﻿.jPicker .Icon {
+  display: inline-block;
+  height: 24px; 
+  position:absolute;top:2px;right:5px;
+  text-align: left; 
+  width: 25px;
+}
+.jPicker .Icon span.Color, .jPicker .Icon span.Alpha {
+  background-position: 2px 2px;
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.jPicker .Icon span.Image {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;background-position:0px -470px;
+}
+.jPicker.Container {
+  color: #000;
+  z-index: 10;
+}
+table.jPicker {
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 12px !important;
+  margin: 0px;
+  padding: 5px;position:relative;
+  width: 420px;height:440px;
+  z-index: 20;
+}
+.jPicker .Move 
+{
+  box-shadow: 0 0 5px #dddddd;
+  background-color:#ecf0f1;	
+  cursor: move;
+  height: 40px;position:relative;font-size:14px;
+  padding: 0px 0px 0px 20px;
+}
+.jPicker .Title {
+  font-size: 11px !important;
+  font-weight: bold;
+  margin: -2px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+  width: 100%;
+}
+.jPicker div.Map {
+  border: 2px solid #fff;
+  cursor: crosshair;
+  height: 260px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
+  overflow: hidden; /* hide the overdraw of the Color Map icon when at edge of viewing box */
+  padding: 0px;
+  position: relative; /* make this element an absolute positioning container */
+  width: 260px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
+}
+.jPicker div[class="Map"] {
+  
+}
+.jPicker div.Bar {
+  border: 2px solid #fff;
+  cursor: n-resize;
+  height: 260px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 24px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 20px later */
+}
+.jPicker div[class="Bar"] {
+
+}
+.jPicker .Map .Map1, .jPicker .Map .Map2, .jPicker .Map .Map3, .jPicker .Bar .Map1, .jPicker .Bar .Map2, .jPicker .Bar .Map3, .jPicker .Bar .Map4, .jPicker .Bar .Map5, .jPicker .Bar .Map6 {
+  background-color: transparent;
+  background-image: none;
+  display: block;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+.jPicker .Map .Map1, .jPicker .Map .Map2, .jPicker .Map .Map3 {
+  height: 2596px;
+  width: 256px; /* must specify pixel width. IE7/8 Quirks mode ignores opacity for an absolutely positioned item in a relative container with "overflow: visible". The marker in the colorBar
+                   would not be drawn if its overflow is set to hidden. */
+}
+.jPicker .Bar .Map1, .jPicker .Bar .Map2, .jPicker .Bar .Map3, .jPicker .Bar .Map4 {
+  height: 3896px;
+  width: 20px; /* must specify pixel width. IE7/8 Quirks mode ignores opacity for an absolutely positioned item in a relative container with "overflow: visible". The marker in the colorBar
+                  would not be drawn if its overflow is set to hidden. */
+}
+.jPicker .Bar .Map5, .jPicker .Bar .Map6 {
+  height: 256px;
+  width: 20px; /* must specify pixel width. IE7/8 Quirks mode ignores opacity for an absolutely positioned item in a relative container with "overflow: visible". The marker in the colorBar
+                  would not be drawn if its overflow is set to hidden. */
+}
+.jPicker .Map .Map1, .jPicker .Map .Map2, .jPicker .Bar .Map6 {
+  background-repeat: no-repeat;
+}
+.jPicker .Map .Map3, .jPicker .Bar .Map5 {
+  background-repeat: repeat;
+}
+.jPicker .Bar .Map1, .jPicker .Bar .Map2, .jPicker .Bar .Map3, .jPicker .Bar .Map4 {
+  background-repeat: repeat-x;
+}
+.jPicker .Map .Arrow {
+  display: block;
+  position: absolute;
+}
+.jPicker .Bar .Arrow {
+  display: block;
+  left: 0px; /* (arrow width / 2) - (element width / 2) - position arrows' center in elements' center */
+  position: absolute;
+}
+.jPicker .Preview {
+  font-size: 9px;
+  padding: 5px 0px 0px 0px;
+  text-align: center;
+}
+.jPicker .Preview div {
+  height:80px;
+  margin: 0px auto;
+  padding: 0px;
+  width: 80px;
+}
+.jPicker .Preview div span {
+  border: 1px solid #000;
+  display: block;
+  height: 40px;
+  margin: 0px auto;
+  padding: 0px;
+  width: 80px;
+}
+.jPicker .Preview .Active {
+  border-bottom-width: 0px;
+}
+.jPicker .Preview .Current {
+  border-top-width: 0px;
+  cursor: pointer;
+}
+.jPicker input {
+  font-size: 13px;
+}
+.jPicker .Button {
+ text-align: center;
+    
+    width:420px;height:105px;
+    position: absolute;
+    top: 50px;
+    left: 0px;padding:0px 10px;
+}
+.jPicker .Button input {
+  padding: 2px 0px;
+  width: 100px;
+}
+.jPicker .Button .Ok 
+{
+  position:absolute;top:-40px;width: 60px !important;
+    right: 80px !important;
+    border: none;box-shadow: 0 0 3px rgba(0,0,0,0.4);background-color:#fff;border-radius: 3px;
+}
+.jPicker .Button .Cancel
+{
+	position: absolute;
+    top: -40px;
+    width: 60px !important;
+    right: 10px;
+    border: none;box-shadow: 0 0 3px rgba(0,0,0,0.4);background-color:#fff;border-radius: 3px;
+}
+.jPicker td {
+  margin: 0px;
+  padding: 0px;
+}
+.jPicker td.Radio {
+  margin: 0px;
+  padding: 0px;
+  width: 31px;
+}
+.jPicker td.Radio input {
+  margin: 0px 5px 0px 0px;
+  padding: 0px;
+}
+.jPicker td.Text {
+  font-size: 12px !important;
+  height: 22px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  width: 70px;
+}
+.jPicker tr.Hex td.Text {
+  width: 100px;
+}
+.jPicker td.Text input {
+    background-color: #fff;
+    height: 25px !important;
+    text-align: center;
+    width: 80px !important;
+    position: absolute;
+    top: 8px;
+    left: 19px;
+    bottom: auto;
+}
+.jPicker td[class="Text"] input {
+  height: 15px;
+}
+.jPicker tr.Hex td.Text input.Hex {
+  width: 50px;
+}
+.jPicker tr.Hex td.Text input.AHex {
+  width: 20px;
+}
+.jPicker .Grid 
+{
+    text-align: center;
+    width: 410px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+}
+.jPicker .Grid span.QuickColor {
+ border-radius:2px;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+     margin: 2px 0px 0px 2px;
+    padding: 0px;
+    width: 20px;
+}
+.jPicker .Grid span[class="QuickColor"] {
+ 
+}

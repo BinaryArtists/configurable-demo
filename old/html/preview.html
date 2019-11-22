@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" href="../css/zutai/sui.css">
+    <link rel="stylesheet" href="../css/zutai/jquery-ui.css">
+    <link rel="stylesheet" href="../css/zutai/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/zutai/jPicker-1.1.6.css">
+    <link rel="stylesheet" href="../css/zutai/index.css">
+    <style>
+        .avast_index_li li {
+            cursor: default !important;
+        }
+
+        .avast_index_li span {
+            cursor: default !important;
+        }
+
+        .tabs_echarts_avastKG,
+        .tabs_echartss_avastZ,
+        .tabs_echarts_IMG,
+        .avast_leftZheng,
+        .avast_leftYuan {
+            cursor: default !important;
+        }
+
+        .tabs_equipment_in {
+            cursor: pointer !important;
+        }
+    </style>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <body>
+        <a id="llq" href="http://w.x.baidu.com/alading/anquan_soft_down_ub/14744"></a>
+        <input type="hidden" id="wsurl1" value="" />
+        <input type="hidden" id="uid" value="" />
+        <div class="body" style="transform:scale(1)" id="1">
+
+        </div>
+        <!-- 数据下发 -->
+        <div class="tabs_equipment_dialogue">
+            <div class="tabs_equipment_dialogue_left">
+                <ul id="_sensors">
+
+                </ul>
+            </div>
+            <div class="tabs_equipment_dialogue_right">
+                <div class="dialogue_right_con" id="_log">
+
+                </div>
+                <div class="dialogue_right_con_bottom">
+                    <div class="dialogue_textarea">
+                        <input type="hidden" id="sendSensorId" />
+                        <input type="hidden" id="sendSensorName" />
+                        <textarea id="textarea"></textarea>
+                    </div>
+                    <div class="dialogue_right_con_bottom_anniu">
+                        <button type="button" class="dialogue_quxiao">取消</button>
+                        <button type="button" class="dialogue_tijiao" onclick="sendData();">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 历史记录 -->
+        <div class="tabs_equipment_dialogue1">
+            <div class="tabs_equipment_dialogue1_off">
+            </div>
+            <div class="tabs_equipment_dialogue_left1">
+                <ul id="sensors_history">
+
+                </ul>
+            </div>
+            <div class="tabs_equipment_dialogue_right1">
+                <div class="tabs_equipment_dialogue_right1_title">
+                </div>
+                <div class="dialogue_right_con1" id="history">
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script> 
+            var basePath;
+            $(document).ready(function () {
+                basePath = $("#basePath", window.opener.document).val();
+                var userId = $("#userId", window.opener.document).val();
+                $("#uid").val(userId);
+                $("#wsurl1").val("ws://121.43.107.76:8086/tlink_websocket/chat/" + userId + "_0");
+                $(".body", window.opener.document).find("script").remove();
+                var html = $(".body", window.opener.document).html();
+                $(".body").html(html);
+                //$(".body").find(".index").attr("style","");
+                var zujian = $(".avast_index_li .avast_chuanganqi_ico");
+                if (null != zujian && zujian.length > 0) {
+                    for (var i = 0; i < zujian.length; i++) {
+                        var showtype = $(zujian[i]).attr("show");
+                        if ("shuzhi1" == showtype) {
+                            $(zujian[i]).find(".avast_sensorSZ").html("");
+                            var sensorId = $(zujian[i]).find(".index_choice_sc").find(".index_choice_chuanganqi").attr("title");
+                            var unit = $(zujian[i]).find(".index_choice_sc").find(".index_choice_chuanganqi").attr("unit");
+                            var st = $(zujian[i]).find(".index_choice_sc").find(".st").attr("title");
+                            var _time = "";
+                            if ("1" == st) {
+                                _time = "<br><span class='st_" + sensorId + "'></span>";
+                            }
+                            if (undefined == unit) {
+                                unit = "";
+                            }
+                            $(zujian[i]).find(".avast_sensorSZ").append("<span class='s_" + sensorId + "'>00</span><span class='unit_" + sensorId + "'>&nbsp;" + unit + "</span>" + _time)
+                        } else {
+                            var flag = $(zujian[i]).attr("flag");
+                            var deviceId = $(zujian[i]).find(".index_choice_sc").find(".index_choice_shebei").attr("title");
+                            var sensorId = "";
+                            var sensor = $(zujian[i]).find(".index_choice_sc").find(".index_choice_chuanganqi");
+                            if (null != sensor && sensor.length > 0) {
+                                for (var j = 0; j < sensor.length; j++) {
+                                    sensorId += $(sensor[j]).attr("title");
+                                    if (sensor.length > 1) {
+                                        sensorId += ",";
+                                    }
+                                }
+                            }
+                            if ("yibiao" == flag) {
+                                var min = $(zujian[i]).find(".index_choice_sc").find(".index_choice_min").val();
+                                var max = $(zujian[i]).find(".index_choice_sc").find(".index_choice_max").val();
+                                $(zujian[i]).find("iframe").attr("src", basePath + "/web/configuration/showdata.htm?deviceId=" + deviceId + "&sensorIds=" + sensorId + "&showtype=" + showtype + "&max=" + max + "&min=" + min);
+                            } else {
+                                var src = basePath + "/web/configuration/showdata.htm?deviceId=" + deviceId + "&sensorIds=" + sensorId + "&showtype=" + showtype;
+                                if ("kaiguan" == flag) {
+                                    if ('kaiguan5' == showtype) {
+                                        $(zujian[i]).find(".avast_sensorKG").addClass("_switcher" + sensorId);
+                                        $(zujian[i]).find(".avast_on").attr("onclick", "switchVal('" + sensorId + "','0');");
+                                        $(zujian[i]).find(".avast_off").attr("onclick", "switchVal('" + sensorId + "','1');");
+                                    } else {
+                                        $(zujian[i]).find(".avast_on").html("");
+                                        $(zujian[i]).find(".avast_on").append("<iframe class='avast_iframe' frameborder='0' scrolling='no' src='" + src + "'></iframe>");
+                                    }
+                                } else {
+                                    var tm = $(zujian[i]).find(".index_choice_sc").find(".tm").attr("title");
+                                    src += "&tm=" + tm;
+                                    $(zujian[i]).find("iframe").attr("src", src);
+                                }
+                            }
+                        }
+                    }
+                }
+                $("#avast_table").remove();
+                $("#avast_index").hide();
+                $(".avast_iframe_z").hide();
+                $(".body").find(".index").attr("style", "");
+
+                $(".index_choice_sc").each(function () {
+                    var sensorId = $(this).find(".index_choice_chuanganqi").attr("title");
+                    if (undefined != sensorId && "" != sensorId) {
+                        $.get(basePath + "/api/device/" + sensorId + "/datapoints", null,
+                            function (data) {
+                                var jsonObj = $.parseJSON(data);
+                                if ("00" == jsonObj.flag) {
+                                    var type = jsonObj.sensorTypeId;
+                                    if ("1" == type || "6" == type) {
+                                        if ("" != jsonObj.value) {
+                                            $(".s_" + sensorId).html(jsonObj.value);
+                                            $(".unit_" + sensorId).html(jsonObj.unit);
+                                            $(".st_" + sensorId).html(jsonObj.timestamp);
+                                        }
+                                    } else if ("2" == type || "5" == type) {
+                                        var val = jsonObj.switcher;
+                                        if ("" != val) {
+                                            if ('1' == val) {
+                                                $("._switcher" + sensorId).find(".avast_on").show();
+                                                $("._switcher" + sensorId).find(".avast_off").hide();
+                                            } else if ('0' == val) {
+                                                $("._switcher" + sensorId).find(".avast_on").hide();
+                                                $("._switcher" + sensorId).find(".avast_off").show();
+                                            }
+                                        }
+                                    } else if ("3" == type) {
+                                        var lat = jsonObj.lat;
+                                        var lng = jsonObj.lng;
+                                    }
+                                }
+                            });
+                    }
+                });
+
+                if (!window.WebSocket) {
+                    if (confirm('您的浏览器版本较低,将不能收到设备发送的实时数据，建议下载Tlink推荐浏览器.')) {
+                        llq.click();
+                    }
+                }
+                var d = new Date();
+                var year = d.getFullYear();
+                var month = d.getMonth() + 1;
+                var day = d.getDate();
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                if (day < 10) {
+                    day = "0" + day;
+                }
+                var nowDate = year + "-" + month + "-" + day;
+
+                var wsurl1 = $("#wsurl1").val();
+
+                var ws1 = new WebSocket(wsurl1);
+
+                ws1.onopen = function () {
+                };
+                ws1.onmessage = function (message) {
+                    if (message.data != 'request_fail') {
+                        var uid = $("#uid").val();
+                        var jsonObj = eval('(' + message.data + ')');
+                        if (Number(uid) == Number(jsonObj.deviceUserid)) {
+                            var dataObj = eval(jsonObj.sensorsDates);
+                            for (var i = 0; i < dataObj.length; i++) {
+                                var sensorsTypeId = dataObj[i].sensorsTypeId;
+                                var updateTime = nowDate + " " + dataObj[i].times;
+                                var sensorId = dataObj[i].sensorsId;
+                                var isAlarm = dataObj[i].isAlarm;
+                                var val = '';
+                                if ('3' == sensorsTypeId) {//定位型
+                                    if (dataObj[i].lng != '0' && dataObj[i].lat != '0') {
+                                        $(".s_" + sensorId).html("");
+                                        $(".st_" + sensorId).html(updateTime);
+                                    } else {
+                                        val = "0,0";
+                                    }
+                                } else if ('1' == sensorsTypeId || "6" == sensorsTypeId) {  //数值
+                                    val = dataObj[i].value;
+                                    if (val != 'null' && val != '') {
+                                        $(".st_" + sensorId).html(updateTime);
+
+                                        if ("6" == sensorsTypeId) {
+                                            val = dataObj[i].gear;
+                                        }
+
+                                        if (isAlarm == "1") {  //需要报警
+                                            $(".s_" + sensorId).html("<font color='red'>" + val + "</font>");
+                                        } else {
+                                            $(".s_" + sensorId).html(val);
+                                        }
+                                    }
+                                } else if ('2' == sensorsTypeId || '5' == sensorsTypeId) {
+                                    val = dataObj[i].switcher;
+                                    if ('0' == val) {
+                                        $("._switcher" + sensorId).find(".avast_on").hide();
+                                        $("._switcher" + sensorId).find(".avast_off").show();
+                                    } else if ('1' == val) {
+                                        $("._switcher" + sensorId).find(".avast_on").show();
+                                        $("._switcher" + sensorId).find(".avast_off").hide();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                };
+
+                ws1.onclose = function () {
+                }
+
+            });
+            function postToServer() {
+                ws1.send("msg");
+            }
+
+            function closeConnect() {
+                ws1.close();
+            }
+
+            function switchVal(sensorId, _switch) {
+                //var basePath = $("#basePath",window.opener.document).val();
+                $.ajax({
+                    url: basePath + "/device/sendSwitchVal.htm",
+                    type: "POST",
+                    data: {
+                        "deviceNo": '',
+                        "sensorId": sensorId,
+                        "value": _switch
+                    },
+                    success: function (data) {
+                        var jsonObj = $.parseJSON(data);
+                        if ('00' == jsonObj.flag) {
+                            alert("发送成功！");
+                            if ('1' == _switch) {
+                                $("._switcher" + sensorId).find(".avast_on").show();
+                                $("._switcher" + sensorId).find(".avast_off").hide();
+                            } else if ('0' == _switch) {
+                                $("._switcher" + sensorId).find(".avast_on").hide();
+                                $("._switcher" + sensorId).find(".avast_off").show();
+                            }
+                        } else {
+                            alert(jsonObj.msg);
+                        }
+                    }
+                });
+            }
+
+            function sendData() {
+                var sensorId = $("#sendSensorId").val();
+                var sensorName = $("#sendSensorName").val();
+                var sendVal = $("#textarea").val();
+                if ("" == sensorId || "" == sendVal) {
+                    alert("未选择传感器或发送数据为空！");
+                } else {
+                    //var basePath = $("#basePath",window.opener.document).val();
+                    $.ajax({
+                        url: basePath + "/sendData.htm",
+                        type: "POST",
+                        data: {
+                            "sensorId": sensorId,
+                            "value": sendVal
+                        }, success: function (data) {
+                            var jsonObj = $.parseJSON(data);
+                            if ('00' == jsonObj.flag) {
+                                $("#_log").find(".mCSB_container").append("<div class='dialogue_right_con_left'><span class='dialogue_right_con_left_s'>发送数据:(" + sensorName + ") " + sendVal + " &nbsp;发送成功！</span></div>")
+                            } else {
+                                $("#_log").find(".mCSB_container").append("<div class='dialogue_right_con_left'><span class='dialogue_right_con_left_s'>发送数据:(" + sensorName + ") " + sendVal + " &nbsp;发送失败，" + jsonObj.msg + "</span></div>")
+                            }
+                        }
+                    });
+
+
+                }
+            }
+
+            /*** 通信设备 ***/
+            (function ($) {
+                $(window).on("load", function () {
+                    $(".tabs_equipment_dialogue_left, .dialogue_right_con, .dialogue_right_con1, .tabs_equipment_dialogue_left1").mCustomScrollbar(
+                        {
+                            theme: "dark-2",
+                        });
+                });
+            })(jQuery);
+            $(function () {
+                $(".tabs_equipment_ino").on("click", function () {
+                    var html = "";
+                    $(this).find(".index_choice_chuanganqi").each(function () {
+                        html += '<li class="dialogue_left_li" title="' + $(this).attr("title") + '">' + $(this).html() + '</li>'
+                    })
+                    $("#_sensors").html(html);
+                    $("#_log").find(".mCSB_container").html("");
+                    $("#sendSensorId").val("");
+                    $("#sendSensorName").val("");
+                    $("#textarea").val("");
+                    $(".dialogue_left_li").on("click", function () {
+                        $("#sendSensorId").val($(this).attr("title"));
+                        $("#sendSensorName").val($(this).text());
+                        $(this).addClass("dialogue_left_li_on");
+                        $(this).siblings(".dialogue_left_li").removeClass("dialogue_left_li_on");
+                    })
+                    $(".tabs_equipment_dialogue").show();
+
+                })
+                $(".dialogue_quxiao").on("click", function () {
+                    $(".tabs_equipment_dialogue").hide();
+                })
+            });
+            /*** 历史记录 ***/
+            $(function () {
+                $(".history").on("click", function () {
+
+                    var html = "";
+                    $(this).find(".index_choice_chuanganqi").each(function () {
+                        html += '<li class="dialogue_left_li" title="' + $(this).attr("title") + '" type="' + $(this).attr("type") + '">' + $(this).html() + '</li>'
+                    })
+                    $("#sensors_history").html(html);
+                    $("#history").html("");
+                    $(".dialogue_left_li").on("click", function () {
+                        $("#history").html("");
+                        var sensorId = $(this).attr("title");
+                        var type = $(this).attr("type");
+                        if (type == "3") {
+                            $("#history").append('<iframe src="' + basePath + '/historyMap.htm?sensorId=' + sensorId + '" style="width:780px;height:330px;border:none;margin:10px 0px 0px 10px"></iframe>');
+                        } else {
+                            $("#history").append('<iframe src="' + basePath + '/device/goHistoryLine.htm?url=mobile&sensorId=' + sensorId + '&type=' + type + '" style="width:780px;height:600px;border:none;margin:10px 0px 0px 10px"></iframe>');
+                        }
+                        $(this).addClass("dialogue_left_li_on");
+                        $(this).siblings(".dialogue_left_li").removeClass("dialogue_left_li_on");
+                    })
+                    $(".tabs_equipment_dialogue1").show();
+                })
+
+                $(".tabs_equipment_dialogue1_off").on("click", function () {
+                    $(this).parent(".tabs_equipment_dialogue1").hide();
+                })
+                $(function () {
+                    $(document).on("click mousedown", function (e) {
+                        if ($(".tabs_equipment_dialogue1").css("display") != 'none') {
+                            var target = $(e.target);
+                            if (target.closest(".tabs_equipment_dialogue1").length == 0 && target.closest(".history").length == 0) {
+                                $(".tabs_equipment_dialogue1").hide();
+                            };
+                        }
+                    })
+                });
+
+            });
+            $(".tabs_equipment_dialogue1").draggable(
+                {
+                    opacity: 0.5,
+                    handle: ".tabs_equipment_dialogue_right1_title",
+                    containment: '.body',
+                    scroll: false,
+                });
+            /*** 历史记录end ***/
+            /* 永久居中 */
+            $(function () {
+                var resize_index_width = $(".avast_index_html").css("width");
+                var resizeIndexWidth = resize_index_width.replace(/[^0-9]/g, "");
+                var left_index_avast = "-" + (resizeIndexWidth) / 2 + "px";
+                $(".avast_index_html").css({ "left": "50%", "margin-left": left_index_avast, });
+            });
+            /*  悬浮球 */
+            $(function () {
+                //可移动
+                $(".avast_xuanfuqiu").draggable(
+                    {
+                        opacity: 0.5,
+                        containment: 'body',
+                        scroll: false,
+                    });
+                $(".avast_xuanfuqiu").on("mouseenter", function () {
+                    $(".avast_xuanfuqiu3").show();
+                })
+                /** 自动贴边 **/
+                $(".avast_xuanfuqiu").on("mouseup", function () {
+                    var a = $(".avast_xuanfuqiu").css("left").replace(/[a-z]/g, "");
+                    var b = $(".avast_xuanfuqiu").css("top").replace(/[a-z]/g, "");
+                    var e = $(".avast_xuanfuqiu").css("top").replace(/[a-z]/g, "");
+                    var f = $(".avast_xuanfuqiu").css("left").replace(/[a-z]/g, "");
+                    var c_window = $(window).width();
+                    var c = c_window - a - 62;
+                    console.log(c);
+
+                    if (a < 3) {
+                        $(".avast_xuanfuqiu").hide();
+                        $(".edge_left").css("top", e);
+                        $(".edge_left").show();
+                    }
+                    if (b < 3) {
+                        $(".avast_xuanfuqiu").hide();
+                        $(".edge_top").css("left", f);
+                        $(".edge_top").show();
+                    }
+                    if (c < 3) {
+                        $(".avast_xuanfuqiu").hide();
+                        $(".edge_right").css("top", e);
+                        $(".edge_right").show();
+                    }
+                });
+                $(".edge_left, .edge_right, .edge_top").on("mouseenter", function () {
+
+                    setTimeout(function () {
+                        $(".edge_left").hide();
+                        $(".edge_top").hide();
+                        $(".edge_right").hide();
+                        $(".avast_xuanfuqiu").show();
+                    }, 1000);
+
+
+                });
+                /** 自动贴边end **/
+                $(".avast_xuanfuqiu").on("mouseleave", function () {
+                    $(".avast_xuanfuqiu3").hide();
+                })
+                $(".avast_xuanfuqiu_up").on("click", function () {
+                    var a_zoom = $(".body").attr("id");
+                    var i = 0;
+                    i++;
+                    var a = ((Number(a_zoom) * 10) + Number(i)) / 10;
+                    var a_huohu = "scale" + "(" + a + ")"
+                    $(".body").css("transform", a_huohu);
+                    $(".body").attr("id", a);
+                    var b = (((Number(a_zoom) * 10) + Number(i))) * 10 + "%";
+                    $(".avast_xuanfuqiu2").text(b);
+                })
+                $(".avast_xuanfuqiu_down").on("click", function () {
+                    var a_zoom = $(".body").attr("id");
+                    var i = 0;
+                    i++;
+                    var a = ((Number(a_zoom) * 10) - Number(i)) / 10;
+                    var a_huohu = "scale" + "(" + a + ")"
+                    $(".body").css("transform", a_huohu);
+                    $(".body").attr("id", a);
+                    var b = (((Number(a_zoom) * 10) - Number(i))) * 10 + "%";
+                    $(".avast_xuanfuqiu2").text(b)
+                })
+            })
+        </script>
+    </body>
+
+</html>
